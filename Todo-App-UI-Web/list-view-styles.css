@@ -121,13 +121,10 @@ form {
   margin-left: 4em;
 }
 
-label {
-  font-size: 20px;
-}
-
 input[type="checkbox"] {
   width: 1.2em;
   height: 1.2em;
+  margin-top: 5px;
 }
 
 label {
@@ -141,6 +138,7 @@ label {
   margin-top: 6.5em;
   margin-left: 16em;
 }
+
 
 #popup {
   background: rgba(244, 244, 244, 0.5);
@@ -172,6 +170,7 @@ label {
   left: 0;
   margin: auto;
   background: white;
+  filter: blur(0);
 }
 
 #popup:target {
@@ -218,12 +217,4 @@ input[type="text"]:focus {
 
 .close:hover {
   background: #ff7262;
-}
-
-body .container-2, main {
-    -webkit-filter: blur(1px);
-    -moz-filter: blur(1px);
-    -o-filter: blur(1px);
-    -ms-filter: blur(1px);
-    filter: blur(4px);
 }
