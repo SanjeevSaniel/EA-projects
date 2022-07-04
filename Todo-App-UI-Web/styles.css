@@ -144,6 +144,7 @@ label {
   top: 0;
   left: 0;
   display: none;
+  z-index: 1;
 }
 
 #popup-window {
@@ -171,6 +172,10 @@ label {
 
 #popup:target {
   display: block;
+}
+
+.blur {
+  backdrop-filter: blur(10px);
 }
 
 #new-item {

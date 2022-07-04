@@ -178,6 +178,10 @@ label {
   display: block;
 }
 
+.blur {
+  backdrop-filter: blur(10px);
+}
+
 #new-item {
   margin: 1.5em 0 0.5em 0;
   color: #e74c3c;
