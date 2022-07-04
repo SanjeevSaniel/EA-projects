@@ -1,9 +1,9 @@
-# EA-projects
-Prepbytes - Elevation Academy Projects
+># EA-projects
+>Prepbytes - Elevation Academy Projects
 
-HTML
+>HTML
  - Basic HTML Page
  
-HTML & CSS
+>HTML & CSS
  - TODO App UI Web
  - TODO App UI Mobile
