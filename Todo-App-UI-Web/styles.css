@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  background-color: rgb(247, 240, 232);
+  /* background-color: rgb(247, 240, 232); */
+  background-color: #FDFEFE;
 }
 
 .container {
@@ -11,7 +12,7 @@ body {
   margin: 4em 5em;
   padding: 2em;
   border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(170, 170, 170);
+  box-shadow: 0 0 5px rgb(170, 170, 170);
 }
 
 @media screen and (min-height: 900px) {
