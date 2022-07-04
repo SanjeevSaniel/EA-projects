@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO App UI Mobile</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Kantumruy Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <header class="header">
+          <span
+            ><span id="tasks">Tasks</span> <span id="lists">Lists</span>
+          </span>
+
+          <a href="#popup" id="add-button">
+            <img src="./images/icons8-plus-50.png" alt="Add icon" />
+          </a>
+        </header>
+        <section id="boxes">
+          <a href="./list-view.html" target="_self"
+            ><div class="box"><p>Trip to Paris</p></div>
+          </a>
+          <div class="box"><p>My Todo List 2</p></div>
+          <div class="box"><p>My Todo List 3</p></div>
+          <div class="box"><p>My Todo List 4</p></div>
+          <div class="box"><p>My Todo List 5</p></div>
+        </section>
+
+        <!-- Popup Window -->
+        <div id="popup" class="blur">
+          <div id="popup-window">
+            <span id="new-item">Add New List</span>
+            <input type="text" name="item" />
+            <a href="#" class="close">ADD</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
