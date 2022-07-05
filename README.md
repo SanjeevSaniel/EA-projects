@@ -10,8 +10,8 @@
 
 >Project Screenshots
 >
-![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-1.jpeg)
-![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-2.jpeg)
+![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-1.png)
+![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-2.png)
 ![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-3.png)
 ![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-4.png)
 
