@@ -20,5 +20,5 @@
  
 >Project Screenshots
 >
-![Screen 1, 2](Todo-App-UI-Mobile/Project-ScreenShots/My-project-(1).png)
-![Screen 3, 4](Todo-App-UI-Mobile/Project-ScreenShots/My-project-(2).png)
+![Screen 1, 2](Todo-App-UI-Mobile/images/Project-ScreenShots/My-project-(1).png)
+![Screen 3, 4](Todo-App-UI-Mobile/images/Project-ScreenShots/My-project-(2).png)
