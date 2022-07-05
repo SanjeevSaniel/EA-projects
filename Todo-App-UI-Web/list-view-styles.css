@@ -58,6 +58,10 @@ img {
   padding-left: 10px;
 }
 
+#back:hover {
+  text-shadow: 0 0 10px #cacbcc;
+}
+
 #back-arrow a {
   text-decoration: none;
   font-weight: 600;
