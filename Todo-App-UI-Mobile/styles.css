@@ -64,6 +64,10 @@ img {
   box-shadow: 5px 5px 10px #cacbcc;
 }
 
+.box:hover {
+  box-shadow: 0 0 10px #cacbcc;
+}
+
 #boxes {
     padding-right: 1.5em;
 }
@@ -71,6 +75,10 @@ img {
 a {
   color: black;
   text-decoration: none;
+}
+
+#boxes a:hover {
+  text-shadow: 0 0 10px #cacbcc;
 }
 
 #popup {
