@@ -84,6 +84,10 @@ img {
   box-shadow: 10px 10px 10px #cacbcc;
 }
 
+.box:hover {
+  box-shadow: 0 0 10px #cacbcc;
+}
+
 .title {
   display: block;
   margin-top: 25px;

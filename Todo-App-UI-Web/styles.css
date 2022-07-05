@@ -1,7 +1,7 @@
 body {
   margin: 0;
   /* background-color: rgb(247, 240, 232); */
-  background-color: #FDFEFE;
+  background-color: #fdfefe;
 }
 
 .container {
@@ -65,6 +65,10 @@ img {
   font-family: "Raleway", sans-serif;
 }
 
+#add-list:hover {
+  text-shadow: 0 0 10px #cacbcc;
+}
+
 #boxes {
   display: flex;
   flex-flow: wrap;
@@ -81,6 +85,10 @@ img {
   text-align: center;
   box-sizing: border-box;
   box-shadow: 10px 10px 10px #cacbcc;
+}
+
+.box:hover {
+  box-shadow: 0 0 10px #cacbcc;
 }
 
 a {
