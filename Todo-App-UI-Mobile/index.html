@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App UI Responsive</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="./images/to-do-list.png" type="image/x-icon" />
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/tablet-styles.css" />
+    <link rel="stylesheet" href="./css/mobile-styles.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Assistant -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Kantumruy Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Title and Add List Button -->
+      <header id="header">
+        <span id="header-one">
+          <span id="tasks">Tasks</span>
+          <span id="lists">Lists</span>
+        </span>
+        <span id="header-two">
+          <a href="#popup">
+            <span id="add-button">
+              <img src="./images/icons8-plus-50.png" alt="Add icon" />
+            </span>
+          </a>
+          <a href="#popup"><span id="add-list">Add List</span></a>
+        </span>
+      </header>
+
+      <!-- Popup Window -->
+      <div id="popup" class="blur">
+        <div id="popup-window">
+          <span id="new-item">Add New Item</span>
+          <input type="text" name="item" />
+          <a href="#" class="close">ADD</a>
+        </div>
+      </div>
+
+      <!-- Task Cards -->
+      <main id="boxes">
+        <!-- Card one -->
+        <div class="box">
+          <span class="title"
+            ><a href="./list-view.html" target="_self">Trip to Paris</a></span
+          >
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+
+        <!-- Card two -->
+        <div class="box">
+          <span class="title">My Todo List</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+
+        <!-- Card three -->
+        <div class="box">
+          <span class="title">My Todo List</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <!-- Tablet View -->
+    <div class="container-tablet">
+      <main>
+        <!-- <header id="header-tablet">
+          <span
+            ><span id="tasks-tablet">Tasks</span>
+            <span id="lists-tablet">Lists</span>
+          </span>
+
+          <a href="#popup-tablet" id="add-button-tablet">
+            <img src="./images/icons8-plus-50.png" alt="Add icon" />
+          </a>
+        </header> -->
+
+        <!-- Header Title and Add List Button -->
+        <header id="header-tablet">
+          <span id="header-one-tablet">
+            <span id="tasks-tablet">Tasks</span>
+            <span id="lists-tablet">Lists</span>
+          </span>
+          <span id="header-two-tablet">
+            <a href="#popup-tablet">
+              <span id="add-button-tablet">
+                <img src="./images/icons8-plus-50.png" alt="Add icon" />
+              </span>
+            </a>
+            <a href="#popup-tablet"
+              ><span id="add-list-tablet">Add List</span></a
+            >
+          </span>
+        </header>
+
+        <!-- Todo Lists -->
+        <section id="boxes-tablet">
+          <a href="./list-view.html" target="_self"
+            ><div class="box"><p>Trip to Paris</p></div>
+          </a>
+          <div class="box"><p>My Todo List 2</p></div>
+          <div class="box"><p>My Todo List 3</p></div>
+          <div class="box"><p>My Todo List 4</p></div>
+          <div class="box"><p>My Todo List 5</p></div>
+        </section>
+
+        <!-- Popup Window -->
+        <div id="popup-tablet" class="blur">
+          <div id="popup-tablet-window">
+            <span id="new-item-tablet">Add New List</span>
+            <input type="text" name="item" />
+            <a href="#" class="close">ADD</a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="container-mobile">
+      <main>
+        <header id="header-mobile">
+          <span
+            ><span id="tasks-mobile">Tasks</span>
+            <span id="lists-mobile">Lists</span>
+          </span>
+
+          <!-- Add List icon-->
+          <a href="#popup-mobile" id="add-button-mobile">
+            <img src="./images/icons8-plus-50.png" alt="Add icon" />
+          </a>
+        </header>
+        <section id="boxes-mobile">
+          <a href="./list-view.html" target="_self"
+            ><div class="box"><p>Trip to Paris</p></div>
+          </a>
+          <div class="box"><p>My Todo List 2</p></div>
+          <div class="box"><p>My Todo List 3</p></div>
+          <div class="box"><p>My Todo List 4</p></div>
+          <div class="box"><p>My Todo List 5</p></div>
+        </section>
+
+        <!-- Popup Window -->
+        <div id="popup-mobile" class="blur">
+          <div id="popup-mobile-window">
+            <span id="new-item-mobile">Add New List</span>
+            <input type="text" name="item" />
+            <a href="#" class="close">ADD</a>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App UI Responsive</title>
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="./css/list-view-styles.css" />
+    <link rel="stylesheet" href="./css/tablet-list-view-styles.css">
+    <link rel="stylesheet" href="./css/mobile-list-view-styles.css">
+
+    <!-- Tab Icon -->
+    <link rel="icon" href="./images/to-do-list.png" type="image/x-icon" />
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libre Franklin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+
+  </head>
+  <body>
+    <!-- Desktop View -->
+    <div class="container-2">
+      <header id="header">
+        <span id="title">Trip to Paris</span>
+      </header>
+      <br />
+      <div id="back-arrow">
+        <a href="./index.html">
+          <p id="back-button">
+            <img src="./images/left-arrow-in-circular-button-black-symbol.png" alt="Add icon" />
+            <span id="back">Back</span>
+          </p>
+        </a>
+      </div>
+
+      <!-- Card -->
+      <main id="boxes">
+        <div class="box">
+          <span class="title">Trip to Paris</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+          <div class="add-button">
+            <a href="#popup"
+              ><img src="./images/icons8-plus-50.png" alt="Add icon"
+            /></a>
+          </div>
+      </main>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popup" class="blur">
+      <div id="popup-window" >
+          <span id="new-item">Add New Item</span>
+          <input type="text" name="item">
+            <a href="#" class="close">ADD</a>
+      </div>
+    </div>
+    
+    <!-- Tablet View -->
+    <div class="container-2-tablet">
+      <header id="header-tablet">
+        <span id="title-tablet">Trip to Paris</span>
+      </header>
+      <br />
+      <div id="back-arrow-tablet">
+        <a href="./index.html">
+          <p id="back-button-tablet">
+            <img src="./images/left-arrow-in-circular-button-black-symbol.png" alt="Add icon" />
+            <span id="back-tablet">Back</span>
+          </p>
+        </a>
+      </div>
+
+      <main id="boxes-tablet">
+        <div class="box">
+          <span class="title">Trip to Paris</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task-tablet" />
+            <label for="task-tablet">Pending Task</label>
+          </form>
+          <div class="add-button">
+            <a href="#popup-tablet"
+              ><img src="./images/icons8-plus-50.png" alt="Add icon"
+            /></a>
+          </div>
+      </main>
+    </div>
+
+    <!-- Popup Window -->
+    <div id="popup-tablet" class="blur-tablet">
+      <div id="popup-tablet-window" >
+          <span id="new-item-tablet">Add New Item</span>
+          <input type="text" name="item">
+            <a href="#" class="close">ADD</a>
+      </div>
+    </div>
+
+    <!-- Mobile View -->
+    <div class="container-mobile">
+      <main>
+        <header id="header-mobile">
+          <a href="./index.html">
+            <img src="./images/left-arrow-in-circular-button-black-symbol.png" alt="Add icon" />
+          </a>
+          <span id="tasks-mobile">Trip to Paris</span>
+        </header>
+        <section id="boxes-mobile">
+          <div class="box">
+          <span class="title">Trip to Paris</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task-mobile" />
+            <label for="task-mobile">Pending Task</label>
+          </form>
+          <div class="add-button">
+            <a href="#popup-mobile"
+              ><img src="./images/icons8-plus-50.png" alt="Add icon"
+            /></a>
+          </div>
+        </section>
+    </main>
+
+        <!-- Popup Window -->
+        <div id="popup-mobile" class="blur">
+          <div id="popup-mobile-window">
+            <span id="new-item-mobile">Add New List</span>
+            <input type="text" name="item" />
+            <a href="#" class="close">ADD</a>
+          </div>
+        </div>
+      
+    </div>
+
+
+  </body>
+</html>
