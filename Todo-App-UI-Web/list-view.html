@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App UI Web</title>
+    <link rel="stylesheet" href="./css/list-view-styles.css" />
+    <link rel="icon" href="./images/to-do-list.png" type="image/x-icon" />
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Libre Franklin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="container-2">
+      <header id="header">
+        <span id="title">Trip to Paris</span>
+      </header>
+      <br />
+      <div id="back-arrow">
+        <a href="./index.html">
+          <p id="back-button">
+            <img src="./images/left-arrow-in-circular-button-black-symbol.png" alt="Add icon" />
+            <span id="back">Back</span>
+          </p>
+        </a>
+      </div>
+
+      <main id="boxes">
+        <div class="box">
+          <span class="title">Trip to Paris</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+          <div class="add-button">
+            <a href="#popup"
+              ><img src="./images/icons8-plus-50.png" alt="Add icon"
+            /></a>
+          </div>
+      </main>
+    </div>
+
+    <div id="popup" class="blur">
+      <div id="popup-window" >
+          <span id="new-item">Add New Item</span>
+          <input type="text" name="item">
+            <a href="#" class="close">ADD</a>
+      </div>
+    </div>
+    
+  </body>
+</html>

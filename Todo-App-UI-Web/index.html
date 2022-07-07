@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App UI Web</title>
+    <link rel="icon" href="./images/to-do-list.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100&display=swap"
+      rel="stylesheet"
+    /> -->
+    <!-- Assistant -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Roboto -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Kantumruy Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header Title and Add List Button -->
+      <header id="header">
+        <span id="header-one">
+          <span id="tasks">Tasks</span>
+          <span id="lists">Lists</span>
+        </span>
+        <span id="header-two">
+          <a href="#popup">
+            <span id="add-button">
+              <img src="./images/icons8-plus-50.png" alt="Add icon" />
+            </span>
+          </a>
+          <a href="#popup"><span id="add-list">Add List</span></a>
+        </span>
+      </header>
+
+      <!-- Popup Window -->
+      <div id="popup" class="blur">
+        <div id="popup-window">
+          <span id="new-item">Add New Item</span>
+          <input type="text" name="item" />
+          <a href="#" class="close">ADD</a>
+        </div>
+      </div>
+
+      <!-- Task Cards -->
+      <main id="boxes">
+        <!-- Card one -->
+        <div class="box">
+          <span class="title"
+            ><a href="./list-view.html" target="_self">Trip to Paris</a></span
+          >
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+
+        <!-- Card two -->
+        <div class="box">
+          <span class="title">My Todo List</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+
+        <!-- Card three -->
+        <div class="box">
+          <span class="title">My Todo List</span>
+          <hr class="box-hr" />
+          <br />
+          <span class="text-crossed">&nbsp;&nbsp;Completed Task</span>
+          <br /><br />
+          <!-- Checkbox -->
+          <form action="">
+            <input type="checkbox" name="task" id="task" />
+            <label for="task">Pending Task</label>
+          </form>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
