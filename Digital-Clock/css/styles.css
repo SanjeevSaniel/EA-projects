@@ -103,6 +103,7 @@ body {
   grid-template-rows: 80px 40px auto auto auto auto auto;
   gap: 1rem;
   justify-content: center;
+  margin-top: calc((100vh - 608px)/2);
 }
 
 .clock-logo {
