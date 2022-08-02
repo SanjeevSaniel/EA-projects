@@ -76,11 +76,6 @@
   color: var(--unnamed-color-3d087b);
 }
 
-@font-face {
-  font-family: var(--unnamed-font-family-bauhaus-hv-bt);
-  src: url(/PrepBytes/Digital-Clock/fonts/bauhaus_heavy_bt.ttf);
-}
-
 html,
 body {
   font-size: 62.5%;
@@ -103,7 +98,7 @@ body {
   grid-template-rows: 80px 40px auto auto auto auto auto;
   gap: 1rem;
   justify-content: center;
-  margin-top: calc((100vh - 608px)/2);
+  margin-top: calc((100vh - 608px) / 2);
 }
 
 .clock-logo {
@@ -270,6 +265,12 @@ body {
   border-radius: 4px;
   opacity: 1;
 }
+
+/* .schedule__time option:hover {
+  background: #ddf5ff 0% 0% no-repeat padding-box;
+  border-radius: 4px 4px 0px 0px;
+  opacity: 0;
+} */
 
 .schedule--time--design {
   font: var(--unnamed-font-style-normal) normal
