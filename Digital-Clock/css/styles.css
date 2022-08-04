@@ -126,8 +126,8 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  font: var(--font-style-normal) normal var(--font-weight-600)
-    20px/30px var(--font-family-manrope);
+  font: var(--font-style-normal) normal var(--font-weight-600) 20px/30px
+    var(--font-family-manrope);
   letter-spacing: var(--character-spacing-0);
   color: var(--background-color-3d087b);
   font: normal normal 600 15px/35px Manrope;
@@ -222,7 +222,7 @@ body {
   grid-row: 2/5;
   position: relative;
   width: 54rem;
-  height: 32rem;
+  height: 33.5rem;
   background: var(--white-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-ededed);
   /* background: #ffffff 0% 0% no-repeat padding-box; */
@@ -243,9 +243,8 @@ body {
   left: 7rem;
   width: 150px;
   height: 23px;
-  font: var(--font-style-normal) normal
-    var(--font-weight-normal) var(--font-size-18) /
-    var(--line-spacing-28) var(--font-family-manrope);
+  font: var(--font-style-normal) normal var(--font-weight-normal)
+    var(--font-size-18) / var(--line-spacing-28) var(--font-family-manrope);
   letter-spacing: var(--character-spacing-0);
   color: var(--background-color-3d087b);
   text-align: left;
@@ -276,8 +275,7 @@ body {
 } */
 
 .schedule--time--design {
-  font: var(--font-style-normal) normal
-    var(--font-weight-normal) 14px/20px
+  font: var(--font-style-normal) normal var(--font-weight-normal) 14px/20px
     var(--font-family-manrope);
   text-align: left;
   font: normal normal normal 14px/20px Manrope;
@@ -287,15 +285,15 @@ body {
 }
 
 .schedule__morning__logo {
-  top: 1rem;
+  top: 1.5rem;
 }
 
 .schedule__morning__text {
-  top: 1rem;
+  top: 1.5rem;
 }
 
 .schedule__time__morning {
-  top: 0.5rem;
+  top: 1rem;
 }
 
 hr {
@@ -308,73 +306,75 @@ hr {
 }
 
 .hr-one {
-  top: 5rem;
+  top: 5.5rem;
 }
 
 .schedule__lunch__logo {
-  top: 9rem;
-}
-
-.schedule__lunch__text {
   top: 9.5rem;
 }
 
+.schedule__lunch__text {
+  top: 10rem;
+}
+
 .schedule__time__lunch {
-  top: 8.5rem;
+  top: 9.5rem;
 }
 
 .hr-two {
-  top: 13.5rem;
+  top: 14rem;
 }
 
 .schedule__nap__logo {
-  top: 18.5rem;
+  top: 19rem;
 }
 
 .schedule__nap__text {
-  top: 18.5rem;
+  top: 19rem;
 }
 
 .schedule__time__nap {
-  top: 17.5rem;
+  top: 18.5rem;
 }
 
 .hr-three {
-  top: 23rem;
+  top: 23.5rem;
 }
 
 .schedule__night__logo {
-  top: 27.5rem;
+  top: 28rem;
 }
 
 .schedule__night__text {
-  top: 27.5rem;
+  top: 28rem;
 }
 
 .schedule__time__night {
-  top: 26.5rem;
+  top: 27.5rem;
 }
 
 /** Greetings */
 
 .greetings {
+  display: flex;
   grid-column: 3/4;
   grid-row: 3/4;
-  width: 46.7rem;
-  height: 3.5rem;
+  width: 49rem;
+  height: 10rem;
   background: var(--white-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-ededed);
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #ededed;
   border-radius: 10px;
-  text-align: center;
+  text-align: left;
+  align-items: center;
   opacity: 1;
-  padding: 2rem 1rem;
+  margin-left: 0.2rem;
+  padding: 0 3rem;
+  box-sizing: border-box;
 }
 
 .greetings__message {
-  width: 5rem;
-  height: 3.8rem;
   font: var(--font-style-normal) normal var(--font-weight-900)
     var(--font-size-30) / 30px var(--font-family-bauhaus-hv-bt);
   letter-spacing: var(--character-spacing-0);
@@ -382,6 +382,7 @@ hr {
   font: normal normal bolder 28px/30px Baumans;
   letter-spacing: 0px;
   color: #8e53f0;
+  align-items: center;
   text-transform: uppercase;
   text-shadow: 2px 2px 5px #bda3e9;
   opacity: 1;
@@ -396,21 +397,19 @@ hr {
   grid-row: 5/6;
   position: relative;
   width: 54.5rem;
-  height: 6rem;
+  height: 7.5rem;
   background: #6a419a 0% 0% no-repeat padding-box;
   border-radius: 10px;
 }
 
 .morning__greetings__message {
-  width: 40rem;
-  height: 30px;
-  font: var(--font-style-normal) normal var(--font-weight-900)
-    27px/34px var(--font-family-bauhaus-hv-bt);
+  font: var(--font-style-normal) normal var(--font-weight-900) 27px/34px
+    var(--font-family-bauhaus-hv-bt);
   letter-spacing: var(--character-spacing-0);
   color: var(--white-color-ffffff);
   text-align: left;
-  padding: 2rem;
-  font: normal normal 900 24px/34px Baumans;
+  padding: 1rem 2rem;
+  font: normal normal 900 2.2rem/3.4rem Baumans;
   color: white;
   text-shadow: 2px 2px 10px rgb(172, 168, 168);
   text-transform: uppercase;
