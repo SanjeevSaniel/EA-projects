@@ -1,79 +1,80 @@
 :root {
-  /* Colors: */
-  --unnamed-color-3d087b: #3d087b;
-  --unnamed-color-8e53f0: #8e53f0;
+  /** Colors: */
+  --background-color-3d087b: #3d087b;
+  --purple-light-color-8e53f0: #8e53f0;
   --unnamed-color-f6e2ff: #f6e2ff;
   --unnamed-color-ededed: #ededed;
-  --unnamed-color-ffffff: #ffffff;
-  --unnamed-color-8a11bf: #8a11bf;
-  --unnamed-color-5f0089: #5f0089;
+  --white-color-ffffff: #ffffff;
+  --purple-medium-color-8a11bf: #8a11bf;
+  --purple-dark-color-5f0089: #5f0089;
 
-  /* Font/text values */
-  --unnamed-font-family-manrope: Manrope;
-  --unnamed-font-family-barlow: Barlow;
-  --unnamed-font-family-bauhaus-hv-bt: Bauhaus Hv BT;
-  --unnamed-font-style-normal: normal;
-  --unnamed-font-weight-600: 600px;
-  --unnamed-font-weight-900: 900px;
-  --unnamed-font-weight-normal: normal;
-  --unnamed-font-size-18: 18px;
-  --unnamed-font-size-23: 23px;
-  --unnamed-font-size-24: 24px;
-  --unnamed-font-size-30: 30px;
-  --unnamed-font-size-36: 36px;
-  --unnamed-character-spacing-0: 0px;
-  --unnamed-line-spacing-28: 28px;
-  --unnamed-line-spacing-38: 38px;
-  --unnamed-line-spacing-43: 43px;
-  --unnamed-text-transform-uppercase: uppercase;
+  /** Font/text values */
+  --font-family-manrope: Manrope;
+  --font-family-barlow: Barlow;
+  --font-family-bauhaus-hv-bt: Bauhaus Hv BT;
+  --font-style-normal: normal;
+  --font-weight-600: 600px;
+  --font-weight-900: 900px;
+  --font-weight-normal: normal;
+  --font-size-18: 18px;
+  --font-size-23: 23px;
+  --font-size-24: 24px;
+  --font-size-30: 30px;
+  --font-size-36: 36px;
+  --character-spacing-0: 0px;
+  --line-spacing-28: 28px;
+  --line-spacing-38: 38px;
+  --line-spacing-43: 43px;
+  --text-transform-uppercase: uppercase;
 }
 
-/* Character Styles */
+/** Character Styles */
+
 .unnamed-character-style-1 {
-  font-family: var(--unnamed-font-family-barlow);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-23);
-  line-height: var(--unnamed-line-spacing-28);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-5f0089);
+  font-family: var(--font-family-barlow);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-23);
+  line-height: var(--line-spacing-28);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--purple-dark-color-5f0089);
 }
 .unnamed-character-style-2 {
-  font-family: var(--unnamed-font-family-barlow);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-36);
-  line-height: var(--unnamed-line-spacing-43);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-8a11bf);
+  font-family: var(--font-family-barlow);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-36);
+  line-height: var(--line-spacing-43);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--purple-medium-color-8a11bf);
 }
 .unnamed-character-style-3 {
-  font-family: var(--unnamed-font-family-bauhaus-hv-bt);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-900);
-  font-size: var(--unnamed-font-size-30);
+  font-family: var(--font-family-bauhaus-hv-bt);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-900);
+  font-size: var(--font-size-30);
   line-height: var(--unnamed-line-spacing-38);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-8e53f0);
-  text-transform: var(--unnamed-text-transform-uppercase);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--purple-light-color-8e53f0);
+  text-transform: var(--text-transform-uppercase);
 }
 .unnamed-character-style-4 {
-  font-family: var(--unnamed-font-family-manrope);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-600);
-  font-size: var(--unnamed-font-size-24);
+  font-family: var(--font-family-manrope);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-600);
+  font-size: var(--font-size-24);
   line-height: var(--unnamed-line-spacing-38);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--white-color-ffffff);
 }
 .unnamed-character-style-5 {
-  font-family: var(--unnamed-font-family-manrope);
-  font-style: var(--unnamed-font-style-normal);
-  font-weight: var(--unnamed-font-weight-normal);
-  font-size: var(--unnamed-font-size-18);
-  line-height: var(--unnamed-line-spacing-28);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-3d087b);
+  font-family: var(--font-family-manrope);
+  font-style: var(--font-style-normal);
+  font-weight: var(--font-weight-normal);
+  font-size: var(--font-size-18);
+  line-height: var(--line-spacing-28);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--background-color-3d087b);
 }
 
 html,
@@ -86,8 +87,8 @@ body {
   left: 0px;
   width: 99%;
   height: 99%;
-  background: var(--unnamed-color-3d087b) 0% 0% no-repeat padding-box;
-  background: #3d087b 0% 0% no-repeat padding-box;
+  background: var(--background-color-3d087b) 0% 0% no-repeat padding-box;
+  /* background: #3d087b 0% 0% no-repeat padding-box; */
   opacity: 1;
 }
 
@@ -108,7 +109,8 @@ body {
   height: 60px;
 }
 
-/* Timer */
+/** Timer */
+
 .timer__container {
   grid-column: 3/4;
   grid-row: 1/3;
@@ -124,10 +126,10 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
-    20px/30px var(--unnamed-font-family-manrope);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-3d087b);
+  font: var(--font-style-normal) normal var(--font-weight-600)
+    20px/30px var(--font-family-manrope);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--background-color-3d087b);
   font: normal normal 600 15px/35px Manrope;
   letter-spacing: 0px;
   opacity: 1;
@@ -213,16 +215,17 @@ body {
   z-index: 0;
 }
 
-/* Schedule */
+/** Schedule */
+
 .schedule {
   grid-column: 1/3;
   grid-row: 2/5;
   position: relative;
   width: 54rem;
   height: 32rem;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: var(--white-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-ededed);
-  background: #ffffff 0% 0% no-repeat padding-box;
+  /* background: #ffffff 0% 0% no-repeat padding-box; */
   border: 1px solid #ededed;
   border-radius: 10px;
 }
@@ -240,11 +243,11 @@ body {
   left: 7rem;
   width: 150px;
   height: 23px;
-  font: var(--unnamed-font-style-normal) normal
-    var(--unnamed-font-weight-normal) var(--unnamed-font-size-18) /
-    var(--unnamed-line-spacing-28) var(--unnamed-font-family-manrope);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-3d087b);
+  font: var(--font-style-normal) normal
+    var(--font-weight-normal) var(--font-size-18) /
+    var(--line-spacing-28) var(--font-family-manrope);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--background-color-3d087b);
   text-align: left;
   font: normal normal normal 18px/28px Manrope;
   letter-spacing: 0px;
@@ -258,9 +261,9 @@ body {
   width: 25rem;
   height: 4rem;
   padding: 0 1rem;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: var(--white-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-ededed);
-  background: #ffffff 0% 0% no-repeat padding-box;
+  /* background: #ffffff 0% 0% no-repeat padding-box; */
   border: 1px solid #ededed;
   border-radius: 4px;
   opacity: 1;
@@ -273,9 +276,9 @@ body {
 } */
 
 .schedule--time--design {
-  font: var(--unnamed-font-style-normal) normal
-    var(--unnamed-font-weight-normal) 14px/20px
-    var(--unnamed-font-family-manrope);
+  font: var(--font-style-normal) normal
+    var(--font-weight-normal) 14px/20px
+    var(--font-family-manrope);
   text-align: left;
   font: normal normal normal 14px/20px Manrope;
   letter-spacing: 0.25px;
@@ -352,13 +355,14 @@ hr {
   top: 26.5rem;
 }
 
-/* Greetings */
+/** Greetings */
+
 .greetings {
   grid-column: 3/4;
   grid-row: 3/4;
   width: 46.7rem;
   height: 3.5rem;
-  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: var(--white-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1px solid var(--unnamed-color-ededed);
   background: #ffffff 0% 0% no-repeat padding-box;
   border: 1px solid #ededed;
@@ -371,11 +375,10 @@ hr {
 .greetings__message {
   width: 5rem;
   height: 3.8rem;
-  /* UI Properties */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900)
-    var(--unnamed-font-size-30) / 30px var(--unnamed-font-family-bauhaus-hv-bt);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-8e53f0);
+  font: var(--font-style-normal) normal var(--font-weight-900)
+    var(--font-size-30) / 30px var(--font-family-bauhaus-hv-bt);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--purple-light-color-8e53f0);
   font: normal normal bolder 28px/30px Baumans;
   letter-spacing: 0px;
   color: #8e53f0;
@@ -384,7 +387,8 @@ hr {
   opacity: 1;
 }
 
-/* Morning Greetings */
+/** Morning Greetings */
+
 .morning__greetings {
   display: flex;
   align-items: center;
@@ -400,22 +404,20 @@ hr {
 .morning__greetings__message {
   width: 40rem;
   height: 30px;
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-900)
-    27px/34px var(--unnamed-font-family-bauhaus-hv-bt);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
+  font: var(--font-style-normal) normal var(--font-weight-900)
+    27px/34px var(--font-family-bauhaus-hv-bt);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--white-color-ffffff);
   text-align: left;
   padding: 2rem;
   font: normal normal 900 24px/34px Baumans;
-  /* letter-spacing: 0px;
-  color: #ffffff; */
   color: white;
   text-shadow: 2px 2px 10px rgb(172, 168, 168);
   text-transform: uppercase;
-  /* opacity: 1; */
 }
 
-/* Greeting Photo */
+/** Greeting Photo */
+
 .greeting-photo {
   grid-column: 3/4;
   grid-row: 4/7;
@@ -423,7 +425,8 @@ hr {
   height: 310px;
 }
 
-/* Set-Alarm */
+/** Set-Alarm */
+
 .btn {
   grid-column: 1/2;
   grid-row: 6/7;
@@ -439,12 +442,11 @@ hr {
 .btn span {
   width: 111px;
   height: 3rem;
-  /* UI Properties */
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
-    var(--unnamed-font-size-24) / var(--unnamed-line-spacing-38)
-    var(--unnamed-font-family-manrope);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
+  font: var(--font-style-normal) normal var(--font-weight-600)
+    var(--font-size-24) / var(--unnamed-line-spacing-38)
+    var(--font-family-manrope);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--white-color-ffffff);
   text-align: left;
   font: normal normal 600 20px/30px Manrope;
   letter-spacing: 0px;
@@ -465,11 +467,11 @@ hr {
 
 .btn:hover::before {
   content: "Party time!";
-  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-600)
-    var(--unnamed-font-size-24) / var(--unnamed-line-spacing-38)
-    var(--unnamed-font-family-manrope);
-  letter-spacing: var(--unnamed-character-spacing-0);
-  color: var(--unnamed-color-ffffff);
+  font: var(--font-style-normal) normal var(--font-weight-600)
+    var(--font-size-24) / var(--unnamed-line-spacing-38)
+    var(--font-family-manrope);
+  letter-spacing: var(--character-spacing-0);
+  color: var(--white-color-ffffff);
   text-align: left;
   font: normal normal 600 20px/30px Manrope;
 
@@ -478,7 +480,8 @@ hr {
   opacity: 1;
 }
 
-/* Schedule Items */
+/** Schedule Items */
+
 .schedule__items {
   grid-column: 2/3;
   grid-row: 6/8;
@@ -492,8 +495,8 @@ hr {
 .schedule__items span {
   width: 200px;
   height: 94px;
-  font: var(--unnamed-font-style-normal) normal bold 15px/25px
-    var(--unnamed-font-family-manrope);
+  font: var(--font-style-normal) normal bold 15px/25px
+    var(--font-family-manrope);
   font: normal normal bold 15px/25px Manrope;
   letter-spacing: 0px;
   color: #f25cfe;
