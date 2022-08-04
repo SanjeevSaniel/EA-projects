@@ -1,6 +1,13 @@
 ># EA-projects
 >## Prepbytes - Elevation Academy Projects
 
+Project Links
+  - [Backtracking](https://sanjeevsaniel.github.io/EA-projects/HTML-Page/index.html)
+  - [TODO App UI Web](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Web/index.html)
+  - [TODO App UI Mobile](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html)
+  - [Digital Clock](https://sanjeevsaniel.github.io/EA-projects/Digital-Clock/index.html)
+
+
 >### HTML
  - Basic HTML Page
  
