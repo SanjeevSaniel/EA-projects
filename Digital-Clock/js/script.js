@@ -1,5 +1,4 @@
-//* Clock ⏱
-
+// Clock ⏱
 let clock = () => {
   let date = new Date();
   let hours = date.getHours();
@@ -40,6 +39,9 @@ let clock = () => {
   let eveningText = "Good Evening !!";
   let nightText = "Good Night !!";
 
+  // TODO: Change image based on time period
+  // let image = document.getElementById("photo");
+
   if (period === "AM" && 1 <= hours && hours <= 12) {
     document.getElementById("greeting-message").innerHTML = morningMessage;
     document.getElementById("greeting-text").innerHTML = morningText;
@@ -58,3 +60,41 @@ let clock = () => {
 };
 
 clock();
+
+// Photo 🖼
+
+// Schedule 📃
+let selectMorningTime = document.getElementById("select-morning");
+let selectNoonTime = document.getElementById("select-afternoon");
+let selectEveningTime = document.getElementById("select-evening");
+let selectNightTime = document.getElementById("select-night");
+
+let wakeUpTime = null;
+let lunchTime = null;
+let napTime = null;
+let nightTime = null;
+
+selectMorningTime.addEventListener("change", function handleChange(event) {
+  // console.log(event.target.value); // get selected value
+  wakeUpTime = selectMorningTime.options[selectMorningTime.selectedIndex].value;
+});
+
+selectNoonTime.addEventListener("change", function handleChange(event) {
+  lunchTime = selectNoonTime.options[selectNoonTime.selectedIndex].value;
+});
+selectEveningTime.addEventListener("change", function handleChange(event) {
+  napTime = selectEveningTime.options[selectEveningTime.selectedIndex].value;
+});
+selectNightTime.addEventListener("change", function handleChange(event) {
+  nightTime = selectNightTime.options[selectNightTime.selectedIndex].value;
+});
+
+// Set Alarm 🔔
+let setAlarm = document.getElementById("set-alarm-btn");
+
+setAlarm.addEventListener("click", function handleChange(event) {
+  document.getElementById("set-wakeup-time").innerHTML = wakeUpTime;
+  document.getElementById("set-lunch-time").innerHTML = lunchTime;
+  document.getElementById("set-nap-time").innerHTML = napTime;
+  document.getElementById("set-night-time").innerHTML = nightTime;
+});

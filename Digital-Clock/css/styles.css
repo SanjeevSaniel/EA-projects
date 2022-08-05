@@ -356,7 +356,7 @@ hr {
   align-items: center;
   opacity: 1;
   margin-left: 0.2rem;
-  padding: 0 3rem;
+  padding: 0 2.2rem;
   box-sizing: border-box;
 }
 
@@ -439,6 +439,7 @@ hr {
   background: transparent
     linear-gradient(113deg, #f1a7c5 0%, #fc5eff 40%, #cb52f8 70%, #6e54ec 100%)
     0% 0% no-repeat padding-box;
+  cursor: pointer;
 }
 .btn:hover span {
   display: none;
