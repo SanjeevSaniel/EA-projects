@@ -88,7 +88,6 @@ body {
   width: 99%;
   height: 99%;
   background: var(--background-color-3d087b) 0% 0% no-repeat padding-box;
-  /* background: #3d087b 0% 0% no-repeat padding-box; */
   opacity: 1;
 }
 
@@ -126,8 +125,6 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  font: var(--font-style-normal) normal var(--font-weight-600) 20px/30px
-    var(--font-family-manrope);
   letter-spacing: var(--character-spacing-0);
   color: var(--background-color-3d087b);
   font: normal normal 600 15px/35px Manrope;
@@ -241,8 +238,6 @@ body {
   color: #3d087b;
   color: var(--background-color-3d087b);
   font: normal normal normal 18px/28px Manrope;
-  font: var(--font-style-normal) normal var(--font-weight-normal)
-    var(--font-size-18) / var(--line-spacing-28) var(--font-family-manrope);
   height: 23px;
   left: 7rem;
   letter-spacing: 0px;
@@ -269,7 +264,8 @@ body {
 .schedule--time--design {
   color: #3d087bde;
   font: normal normal normal 14px/20px Manrope;
-  font: var(--font-style-normal) normal var(--font-weight-normal) 14px/20px var(--font-family-manrope);
+  font: var(--font-style-normal) normal var(--font-weight-normal) 14px/20px
+    var(--font-family-manrope);
   letter-spacing: 0.25px;
   opacity: 1;
   text-align: left;
