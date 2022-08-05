@@ -375,9 +375,6 @@ hr {
 }
 
 .greetings__message {
-  /* font: var(--font-style-normal) normal var(--font-weight-900)
-    var(--font-size-30) / 30px var(--font-family-bauhaus-hv-bt);
-  letter-spacing: var(--character-spacing-0); */
   color: var(--purple-light-color-8e53f0);
   font: normal normal bolder 28px/30px Baumans;
   letter-spacing: 0px;
@@ -404,8 +401,6 @@ hr {
 }
 
 .morning__greetings__message {
-  /* font: var(--font-style-normal) normal var(--font-weight-900) 27px/34px
-    var(--font-family-bauhaus-hv-bt); */
   letter-spacing: var(--character-spacing-0);
   color: var(--white-color-ffffff);
   text-align: left;

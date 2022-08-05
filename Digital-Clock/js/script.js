@@ -40,18 +40,20 @@ let clock = () => {
   let eveningText = "Good Evening !!";
   let nightText = "Good Night !!";
 
-  if (period === "AM") {
+  if (period === "AM" && 1 <= hours && hours <= 12) {
     document.getElementById("greeting-message").innerHTML = morningMessage;
     document.getElementById("greeting-text").innerHTML = morningText;
-  } else if (period === "PM" && (hours === 12 || (1 <= hours && hours <= 3))) {
-    document.getElementById("greeting-message").innerHTML = afternoonMessage;
-    document.getElementById("greeting-text").innerHTML = afternoonText;
-  } else if (period === "PM" && 4 <= hours && hours <= 7) {
-    document.getElementById("greeting-message").innerHTML = eveningMessage;
-    document.getElementById("greetings-text").innerHTML = eveningText;
-  } else if (period === "PM" && 4 <= hours && hours <= 7) {
-    document.getElementById("greeting-message").innerHTML = nightMessage;
-    document.getElementById("greeting-text").innerHTML = nightText;
+  } else if (period === "PM") {
+    if (period === "PM" && (hours === 12 || (1 <= hours && hours <= 3))) {
+      document.getElementById("greeting-message").innerHTML = afternoonMessage;
+      document.getElementById("greeting-text").innerHTML = afternoonText;
+    } else if (period === "PM" && 4 <= hours && hours <= 7) {
+      document.getElementById("greeting-message").innerHTML = eveningMessage;
+      document.getElementById("greeting-text").innerHTML = eveningText;
+    } else {
+      document.getElementById("greeting-message").innerHTML = nightMessage;
+      document.getElementById("greeting-text").innerHTML = nightText;
+    }
   }
 };
 
