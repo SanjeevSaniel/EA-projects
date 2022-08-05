@@ -43,17 +43,15 @@ let clock = () => {
   if (period === "AM") {
     document.getElementById("greeting-message").innerHTML = morningMessage;
     document.getElementById("greeting-text").innerHTML = morningText;
-  } else if (period === "PM") {
-    if (hours === 12 || 1 <= hours <= 3) {
-      document.getElementById("greeting-message").innerHTML = afternoonMessage;
-      document.getElementById("greeting-text").innerHTML = afternoonText;
-    } else if (4 <= hours <= 7) {
-      document.getElementById("greeting-message").innerHTML = eveningMessage;
-      document.getElementById("greetings-text").innerHTML = eveningText;
-    } else {
-      document.getElementById("greeting-message").innerHTML = nightMessage;
-      document.getElementById("greeting-text").innerHTML = nightText;
-    }
+  } else if (period === "PM" && (hours === 12 || (1 <= hours && hours <= 3))) {
+    document.getElementById("greeting-message").innerHTML = afternoonMessage;
+    document.getElementById("greeting-text").innerHTML = afternoonText;
+  } else if (period === "PM" && 4 <= hours && hours <= 7) {
+    document.getElementById("greeting-message").innerHTML = eveningMessage;
+    document.getElementById("greetings-text").innerHTML = eveningText;
+  } else if (period === "PM" && 4 <= hours && hours <= 7) {
+    document.getElementById("greeting-message").innerHTML = nightMessage;
+    document.getElementById("greeting-text").innerHTML = nightText;
   }
 };
 
