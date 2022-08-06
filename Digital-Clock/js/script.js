@@ -39,29 +39,31 @@ let clock = () => {
   let eveningText = "Good Evening !!";
   let nightText = "Good Night !!";
 
-  // TODO: Change image based on time period
-  // let image = document.getElementById("photo");
+  // access image in the HTML document
+  let image = document.getElementById("photo");
 
   if (period === "AM" && 1 <= hours && hours <= 12) {
     document.getElementById("greeting-message").innerHTML = morningMessage;
     document.getElementById("greeting-text").innerHTML = morningText;
+    image.src = "./images/Component-30–1.svg";
   } else if (period === "PM") {
     if (period === "PM" && (hours === 12 || (1 <= hours && hours <= 3))) {
       document.getElementById("greeting-message").innerHTML = afternoonMessage;
       document.getElementById("greeting-text").innerHTML = afternoonText;
+      image.src = "./images/Component-31–1.svg";
     } else if (period === "PM" && 4 <= hours && hours <= 7) {
       document.getElementById("greeting-message").innerHTML = eveningMessage;
       document.getElementById("greeting-text").innerHTML = eveningText;
+      image.src = "./images/lunch_image.png";
     } else {
       document.getElementById("greeting-message").innerHTML = nightMessage;
       document.getElementById("greeting-text").innerHTML = nightText;
+      image.src = "./images/Component-32–1.png";
     }
   }
 };
 
 clock();
-
-// Photo 🖼
 
 // Schedule 📃
 let selectMorningTime = document.getElementById("select-morning");

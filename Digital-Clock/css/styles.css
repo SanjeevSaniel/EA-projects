@@ -423,9 +423,9 @@ hr {
 .btn span {
   width: 111px;
   height: 3rem;
-  font: var(--font-style-normal) normal var(--font-weight-600)
+  /* font: var(--font-style-normal) normal var(--font-weight-600)
     var(--font-size-24) / var(--unnamed-line-spacing-38)
-    var(--font-family-manrope);
+    var(--font-family-manrope); */
   letter-spacing: var(--character-spacing-0);
   color: var(--white-color-ffffff);
   text-align: left;
@@ -433,6 +433,13 @@ hr {
   letter-spacing: 0px;
   color: #ffffff;
   opacity: 1;
+  transition-duration: 0.4;
+  /* overflow: hidden; */
+}
+
+.btn:active {
+  background: #90ee99;
+  transform: translateY(4px);
 }
 
 .btn:hover {
