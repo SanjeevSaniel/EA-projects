@@ -1,48 +1,95 @@
-// const message = () => {
-//   let boxes = document.getElementById("boxes");
-//   while (content == null) {
-//       boxes.innerText = "No items in the todo list.";
-//       boxes.style.color = "black";
-//   }
-// };
+// Script for Modal 🍱
+const openEls = document.querySelectorAll("[data-open]");
+const closeEls = document.querySelectorAll("[data-close]");
+const isVisible = "is-visible";
+// document.body.setAttribute("class","blur");
 
-// message();
+for (const el of openEls) {
+  el.addEventListener("click", function () {
+    const modalId = this.dataset.open;
+    document.getElementById(modalId).classList.add(isVisible);
+  });
+}
 
-const createBox = () => {
-  let container = document.getElementById("boxes");
-  let box = document.createElement("div");
-  box.setAttribute("class", "box");
-  container.appendChild(box);
+for (const el of closeEls) {
+  el.addEventListener("click", function () {
+    this.parentElement.parentElement.parentElement.classList.remove(isVisible);
+  });
+}
 
-  let span = document.createElement("span");
-  span.setAttribute("class", "title");
-  box.appendChild(span);
+document.addEventListener("click", (e) => {
+  if (e.target == document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
 
-  // let anchor = document.createElement("a");
-  // span.appendChild(anchor);
-  span.innerHTML = document.getElementsByName("item").innerHTML;
+document.addEventListener("keyup", (e) => {
+  // if we press the ESC
+  if (e.key == "Escape" && document.querySelector(".modal.is-visible")) {
+    document.querySelector(".modal.is-visible").classList.remove(isVisible);
+  }
+});
 
-  let hr = document.createElement("hr");
-  hr.setAttribute("class", "box-hr");
-  box.appendChild(hr);
+// Creation of Cards
+const createCard = () => {
+  let cards = document.getElementById("cards");
+  let card = document.createElement("div");
+
+  let cardTitle = document.getElementsByClassName("card__title").value;
+  // let inputItem = document.getElementById("item").value;
+
+  // let listItems = document.getElementsByClassName("list-items");
+  // let li = document.createElement("li");
+
+  card.setAttribute("class", "card");
+  cards.appendChild(card);
+
+  card.innerHTML = `<span class="card__title"><a href="./list-view.html" target="_self">${cardTitle.trim()}</a></span>
+          <hr class="card-hr" />
+          <ul class="list-items">
+          </ul>
+          <br /><br />
+          `;
 
   // Add Button ➕
   let addButton = document.createElement("div");
-  addButton.setAttribute("class", "add-button");
-  box.appendChild(addButton);
+  addButton.setAttribute("class", "add-item-button");
+  card.appendChild(addButton);
   let img1 = document.createElement("img");
   img1.src = "./images/icons8-plus-50.png";
   addButton.appendChild(img1);
+  addButton.addEventListener("click", function () {
+    popup.style.display = "block";
+  });
 
   // Delete Button 🚮
   let deleteButton = document.createElement("div");
   deleteButton.setAttribute("class", "delete-button");
-  box.appendChild(deleteButton);
+  card.appendChild(deleteButton);
   let img2 = document.createElement("img");
   img2.src = "./images/bin.svg";
   deleteButton.appendChild(img2);
 
   img2.addEventListener("click", function () {
-    box.remove();
+    card.remove();
   });
+
+  // const newItem = () => {
+  //   listItems.appendChild(li);
+  //   li.innerHTML = `<li><span class="item">${inputItem.trim()}<button class="btn-done">done</button> </span></li>`;
+  // };
+
+  // let closePopup1 = document.getElementById("add-item");
+  // closePopup1.addEventListener("click", function () {
+  //   popup.style.display = "none";
+  //   // newItem();
+  // });
+
+  // let closePopup2 = document.getElementById("close-popup");
+  // closePopup2.addEventListener("click", function () {
+  //   popup.style.display = "none";
+  // });
 };
+
+// let addList = document.getElementById("add-list");
+// addList.onclick = createBox;
