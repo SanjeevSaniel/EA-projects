@@ -35,16 +35,16 @@ const createCard = () => {
   let cards = document.getElementById("cards");
   let card = document.createElement("div");
 
-  let cardTitle = document.getElementsByClassName("card__title").value;
+  let cardTitle = document.getElementById("list-title").value;
+  cardTitle = (cardTitle[0].toUpperCase() + cardTitle.substring(1)).trim();
   // let inputItem = document.getElementById("item").value;
-
   // let listItems = document.getElementsByClassName("list-items");
   // let li = document.createElement("li");
 
   card.setAttribute("class", "card");
   cards.appendChild(card);
 
-  card.innerHTML = `<span class="card__title"><a href="./list-view.html" target="_self">${cardTitle.trim()}</a></span>
+  card.innerHTML = `<span class="card__title"><a href="./list-view.html" target="_self">${cardTitle}</a></span>
           <hr class="card-hr" />
           <ul class="list-items">
           </ul>
@@ -82,7 +82,6 @@ const createCard = () => {
   // let closePopup1 = document.getElementById("add-item");
   // closePopup1.addEventListener("click", function () {
   //   popup.style.display = "none";
-  //   // newItem();
   // });
 
   // let closePopup2 = document.getElementById("close-popup");
@@ -90,6 +89,3 @@ const createCard = () => {
   //   popup.style.display = "none";
   // });
 };
-
-// let addList = document.getElementById("add-list");
-// addList.onclick = createBox;
