@@ -103,6 +103,10 @@ img {
   font-family: "Raleway", sans-serif;
 }
 
+.empty-list {
+  padding: 2rem 4rem;
+}
+
 /* Cards
 ------------------------------------------ */
 #cards {
@@ -137,20 +141,21 @@ img {
   /* font-family: "Sarabun", sans-serif; */
   /* font-family: "Assistant", sans-serif; */
   font-family: "Libre Franklin", sans-serif;
+  cursor: pointer;
 }
 
-.list-items {
+.items-list {
   line-height: 1.7;
 }
 
-.text-crossed {
-  color: red;
-  font-size: 20px;
+.checked {
+  color: rgb(255, 9, 9);
   text-decoration: line-through;
-  text-decoration-thickness: 2.5px;
-  position: relative;
-  padding-right: 10px;
-  font-family: "Lato", sans-serif;
+  text-decoration-thickness: 1.5px;
+}
+
+.hide {
+  display: none;
 }
 
 .btn-done {
@@ -208,6 +213,11 @@ img {
 }
 
 .modal-dialog {
+  overflow: auto;
+  cursor: default;
+}
+
+.list--modal--dialog {
   position: fixed;
   width: 24em;
   height: 220px;
@@ -238,6 +248,7 @@ img {
   color: #e74c3c;
   margin: 0.5rem 0.5rem 0;
   font-size: 1.2rem;
+  font-weight: 500;
 }
 
 .modal-content {
@@ -260,7 +271,7 @@ input[type="text"] {
 
 input[type="text"]:focus {
   border: 1.5px solid #ff321b;
-  box-shadow: 0 1px 5px grey;
+  box-shadow: 0 1px 5px tomato;
 }
 
 .modal-footer {
@@ -283,101 +294,7 @@ input[type="text"]:focus {
   font-size: 1.5rem;
 }
 
-/* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-[data-animation] .modal-dialog {
-  opacity: 0;
-  transition: all 0.5s var(--bounceEasing);
+#add-arrow,
+#back-arrow {
+  cursor: pointer;
 }
-
-[data-animation].is-visible .modal-dialog {
-  opacity: 1;
-  transition-delay: 0s;
-}
-
-[data-animation="slideInOutDown"] .modal-dialog {
-  transform: translateY(100%);
-}
-
-/* [data-animation="slideInOutTop"] .modal-dialog {
-  transform: translateY(-100%);
-} */
-
-/* [data-animation="slideInOutLeft"] .modal-dialog {
-  transform: translateX(-100%);
-}
-
-[data-animation="slideInOutRight"] .modal-dialog {
-  transform: translateX(100%);
-} */
-
-/* [data-animation="zoomInOut"] .modal-dialog {
-  transform: scale(0.2);
-}
-
-[data-animation="rotateInOutDown"] .modal-dialog {
-  transform-origin: top left;
-  transform: rotate(-1turn);
-} */
-
-/* [data-animation="mixInAnimations"].is-visible .modal-dialog {
-  animation: mixInAnimations 2s 0.2s linear forwards;
-} */
-
-[data-animation="slideInOutDown"].is-visible .modal-dialog {
-  transform: none;
-}
-
-/* [data-animation="slideInOutTop"].is-visible .modal-dialog,
-[data-animation="slideInOutLeft"].is-visible .modal-dialog,
-[data-animation="slideInOutRight"].is-visible .modal-dialog,
-[data-animation="zoomInOut"].is-visible .modal-dialog,
-[data-animation="rotateInOutDown"].is-visible .modal-dialog {
-  transform: none;
-} */
-
-/* @keyframes mixInAnimations {
-  0% {
-    transform: translateX(-100%);
-  }
-
-  10% {
-    transform: translateX(0);
-  }
-
-  20% {
-    transform: rotate(20deg);
-  }
-
-  30% {
-    transform: rotate(-20deg);
-  }
-
-  40% {
-    transform: rotate(15deg);
-  }
-
-  50% {
-    transform: rotate(-15deg);
-  }
-
-  60% {
-    transform: rotate(10deg);
-  }
-
-  70% {
-    transform: rotate(-10deg);
-  }
-
-  80% {
-    transform: rotate(5deg);
-  }
-
-  90% {
-    transform: rotate(-5deg);
-  }
-
-  100% {
-    transform: rotate(0deg);
-  }
-} */

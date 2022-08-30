@@ -1,0 +1,77 @@
+.card__modal {
+  background-color: white;
+  padding: 0 2em;
+}
+
+.card__modal__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 12em;
+}
+
+.card__modal__header::before,
+.card__modal__header::after {
+  content: "";
+  border-top: 1px solid;
+  margin-right: 20px;
+  margin-left: 30px;
+  flex: 1 0 auto;
+}
+
+.card__modal__header::after {
+  margin-right: -1em;
+}
+
+.card__modal__title {
+  color: #2c3e50;
+  font-family: "Rubik", sans-serif;
+  font-size: 40px;
+}
+
+#add-card-2 img {
+  width: 32px;
+  height: 32px;
+}
+
+.card__modal__buttons {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.card__list {
+  width: 220px;
+  min-height: 300px;
+  margin: 30px;
+  position: relative;
+  left: calc((100vw - 320px) / 2);
+}
+
+.card__list .title {
+  color: rgb(255, 9, 9);
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+}
+
+.card__list .add-button {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+#add-arrow,
+#back-arrow {
+  display: inline-flex;
+  text-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+
+#add, #back {
+  margin: 5px;
+}
