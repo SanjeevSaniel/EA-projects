@@ -1,0 +1,300 @@
+:root {
+  --lightgray: #efefef;
+  --blue: steelblue;
+  --white: #fff;
+  --black: rgba(0, 0, 0, 0.8);
+  --bounceEasing: cubic-bezier(0.51, 0.92, 0.24, 1.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: inherit;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font: 16px/1.5 sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  margin: auto;
+  width: 90%;
+  min-height: 400px;
+  background-color: white;
+  padding: 2em;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(170, 170, 170);
+}
+
+#header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#header__title {
+  font-size: 50px;
+  padding-right: 5em;
+  position: relative;
+  right: 2rem;
+}
+
+#tasks {
+  color: #2c3e50;
+  font-family: "Rubik", sans-serif;
+}
+
+#lists {
+  font-weight: 500;
+  font-family: "Kantumruy Pro", sans-serif;
+}
+
+#header__button {
+  display: flex;
+  align-items: center;
+  padding-left: 5em;
+  cursor: pointer;
+}
+
+#header__button:hover {
+  text-shadow: 0 0 5px #cacbcc;
+}
+
+#header__button a {
+  color: black;
+}
+
+#add-list-logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+#add-list {
+  padding-left: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Raleway", sans-serif;
+}
+
+.empty-list {
+  padding: 2rem 4rem;
+}
+
+/* Cards
+------------------------------------------ */
+#cards {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card {
+  position: relative;
+  width: 13rem;
+  min-height: 300px;
+  margin: 30px;
+  padding-bottom: 60px;
+  border: 1px solid orangered;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 10px 10px 10px #cacbcc;
+}
+
+.card:hover {
+  box-shadow: 0 0 20px #cacbcc;
+}
+
+.card__title {
+  display: block;
+  margin-top: 25px;
+  color: rgb(255, 9, 9);
+  font-size: 20px;
+  /* font-family: "Sarabun", sans-serif; */
+  /* font-family: "Assistant", sans-serif; */
+  font-family: "Libre Franklin", sans-serif;
+  cursor: pointer;
+}
+
+.items-list {
+  line-height: 1.7;
+}
+
+.checked {
+  color: rgb(255, 9, 9);
+  text-decoration: line-through;
+  text-decoration-thickness: 1.5px;
+}
+
+.hide {
+  display: none;
+}
+
+.btn-done {
+  border: none;
+  border-radius: 30px;
+  padding: 2px 6px;
+  color: #ffffff;
+  background-color: #1185cb;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.add-item-button,
+.delete-button {
+  position: absolute;
+  cursor: pointer;
+  bottom: 10px;
+}
+
+.add-item-button {
+  right: 10px;
+}
+
+.delete-button {
+  right: 50px;
+}
+
+.btn-group {
+  text-align: center;
+}
+
+/* MODAL
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  /* padding: 2rem; */
+  background: rgba(244, 244, 244, 0.5);
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.35s ease-in;
+  z-index: 1;
+  backdrop-filter: blur(10px);
+}
+
+.modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-dialog {
+  overflow: auto;
+  cursor: default;
+}
+
+.list--modal--dialog {
+  position: fixed;
+  width: 24em;
+  height: 220px;
+  top: calc((100vh - 220px) / 2);
+  left: calc((100vw - 24em) / 2);
+  padding: 1px;
+  border-radius: 10px;
+  border: 1.5px solid orangered;
+  box-shadow: 0 0 10px 5px #d5d6d6;
+  background: var(--white);
+  overflow: auto;
+  cursor: default;
+}
+
+.modal-dialog > * {
+  padding: 1rem;
+}
+
+.modal-header,
+.modal-footer {
+  background: var(--white);
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e74c3c;
+  margin: 0.5rem 0.5rem 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.modal-content {
+  align-content: center;
+  text-align: center;
+  margin: 0 0.5rem;
+}
+
+input[type="text"] {
+  width: 85%;
+  padding: 0.5rem;
+  text-align: center;
+  border: 1.5px solid tomato;
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none;
+  font-size: 20px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border: 1.5px solid #ff321b;
+  box-shadow: 0 1px 5px tomato;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem 0.5rem;
+}
+
+.modal-footer button {
+  color: var(--white);
+  margin: 0 10px;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background: #e74c3c;
+  font-size: 20px;
+}
+
+.modal-header .close-modal {
+  font-size: 1.5rem;
+}
+
+#add-arrow,
+#back-arrow {
+  cursor: pointer;
+}

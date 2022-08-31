@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Todo App Js</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/card-modal.css">
+    <link rel="stylesheet" href="./css/animations.css">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" />
+
+    <!-- Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet" />
+
+    <!-- Kantumruy Pro -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@100&display=swap" rel="stylesheet" />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- List Modal -->
+    <div id="modal-list" class="modal" data-animation="slideInOutDown">
+        <div class="modal-dialog list--modal--dialog">
+            <header class="modal-header">
+                Add New List
+            </header>
+            <section class="modal-content">
+                <input id="list-title" type="text" name="list" />
+            </section>
+            <footer class="modal-footer">
+                <button id="add-card" class="close-modal" aria-label="close modal" data-close onclick="acceptData()">
+                    Add
+                </button>
+                <button class="close-modal" aria-label="close modal" data-close>
+                    Close
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Card Modal -->
+    <div id="modal-list-2" class="modal" data-animation="slideInOutDown">
+        <div class="modal-dialog list--modal--dialog">
+            <header class="modal-header">
+                Add New Item
+            </header>
+            <section class="modal-content">
+                <input id="list-item-title" type="text" name="list" />
+            </section>
+            <footer class="modal-footer">
+                <button id="add-card-item" class="close-modal" aria-label="close modal-2" data-close
+                    onclick="addItems()">
+                    Add
+                </button>
+                <button class="close-modal" aria-label="close modal-2" data-close>
+                    Close
+                </button>
+            </footer>
+        </div>
+    </div>
+
+    <!-- Card Modal -->
+    <div id="card-modal-list" class="modal card__modal" data-animation="slideInOutTop">
+        <div class="modal-dialog">
+            <header class="card__modal__header">
+                <span class="card__modal__title">Trip to Paris</span>
+            </header>
+            <br />
+            <div class="card__modal__buttons">
+                <div id="back-arrow" data-close>
+                    <img src="./images/left-arrow-in-circular-button-black-symbol.png" alt="Add icon" />
+                    <span id="back">Back</span>
+                </div>
+                <div id="add-arrow" data-open="modal-list" data-close>
+                    <img src="./images/icons8-plus-50.png" alt="Add icon" />
+                    <span id="add">Add List</span>
+                </div>
+            </div>
+
+            <div class="card card__list">
+                <span class="title">Trip to Paris</span>
+                <hr class="card--modal--hr" />
+                <br />
+                <span class="check">&nbsp;&nbsp;Completed Task</span>
+                <br /><br />
+                <!-- Checkbox -->
+                <form action="">
+                    <input type="checkbox" name="task" id="task" />
+                    <label for="task">Pending Task</label>
+                </form>
+                <div class="add-button">
+                    <img class="btn-image" src="./images/icons8-plus-50.png" alt="Add icon" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header id="header">
+            <span id="header__title">
+                <span id="tasks">Tasks</span>
+                <span id="lists">Lists</span>
+            </span>
+            <span id="header__button" data-open="modal-list">
+                <span id="add-button">
+                    <img id="add-list-logo" src="./images/icons8-plus-50.png" alt="Add icon" />
+                </span>
+                <span id="add-list">Add List</span>
+            </span>
+        </header>
+
+        <!-- Cards -->
+        <main id="cards">
+            <!-- <div class="card">
+                <span class="card__title" data-open="card-modal-list">Trip to Paris</a></span>
+                <hr class="card-hr" />
+                <br />
+                <span class="text-crossed">Completed Task</span>
+                <br />
+                <ul class="list-items">
+                    <li><span class="item">Shopping<button class="btn-done">done</button> </span></li>
+                    <li><span class="item">Sovenirs<button class="btn-done">done</button> </span></li>
+                    <li><span class="item">Street Food<button class="btn-done">done</button> </span></li>
+                    <li><span class="item">Adventure<button class="btn-done">done</button> </span></li>
+                    <li><span class="item">City Tour<button class="btn-done">done</button> </span></li>
+                    <li><span class="item">History<button class="btn-done">done</button> </span></li>
+                </ul>
+                <div class="add-item-button" data-open="modal-list-2">
+                    <img src="./images/icons8-plus-50.png" alt="">
+                </div>
+                <div class="delete-button">
+                    <img src="./images/bin.svg" alt="">
+                </div>
+            </div> -->
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
