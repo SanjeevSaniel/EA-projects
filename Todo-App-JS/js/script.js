@@ -1,6 +1,8 @@
 let data = [];
 let itemCount = 1;
 const cards = document.getElementById("cards");
+const cardDetail = document.getElementById("card-detail");
+const cardDetailTitle = document.getElementById("card-modal-title");
 
 // Script for Modal 🍱
 const modal = () => {
@@ -50,6 +52,7 @@ let acceptData = () => {
   console.log(data);
   // createCards();
   location.reload();
+  location.reload();
   resetValue(cardTitle);
 };
 
@@ -60,7 +63,7 @@ const resetValue = (param) => {
 let createCards = () => {
   data.map((x, y) => {
     return (cards.innerHTML += `<div id=${y} class="card">
-        <span class="card__title" data-open="card-modal-list">${x.name}</a></span>
+        <span class="card__title" data-open="card-modal-list" onclick="viewCardDetail(this)">${x.name}</a></span>
           <hr class="card-hr" />
           <br />
           <ul class="items-list">
@@ -104,6 +107,11 @@ let deleteCard = (e) => {
 
   location.reload();
   console.log(data);
+};
+
+const viewCardDetail = (e) => {
+  cardDetailTitle.innerText = e.innerText;
+  cardDetail.innerHTML = e.parentElement.innerHTML;
 };
 
 modal();
