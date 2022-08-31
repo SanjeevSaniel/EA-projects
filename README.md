@@ -6,7 +6,7 @@ Project Links
   - [TODO App UI Web](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Web/index.html)
   - [TODO App UI Mobile](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html)
   - [Digital Clock](https://sanjeevsaniel.github.io/EA-projects/Digital-Clock/index.html)
-  - [TODO App Js](https://sanjeevsaniel.github.io/EA-projects/)
+  - [TODO App Js](https://sanjeevsaniel.github.io/EA-projects/Todo-App-JS/index.html)
 
 
 >### HTML
