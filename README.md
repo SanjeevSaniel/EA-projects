@@ -33,4 +33,8 @@ Project Links
 
 >### HTML, CSS & JavaScript DOM
  - Digital Clock
-   - [Project view]
+   - [Project view](https://sanjeevsaniel.github.io/EA-projects/Todo-App-JS/index.html)
+   
+>Project Screenshot
+>
+ ![](Digital-Clock/Screenshots/Screenshot%202022-08-31%20102104.png)
