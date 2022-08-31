@@ -14,7 +14,7 @@ Project Links
  
 >### HTML & CSS
  - TODO App UI Web
-   - [GitHub Pages](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Web/index.html)
+   - [Project view](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Web/index.html)
 
 >Project Screenshots
 >
@@ -24,9 +24,24 @@ Project Links
 ![Screen 1, 2](Todo-App-UI-Web/images/Project-ScreenShots/Screen-4.png)
 
  - TODO App UI Mobile 
-   - [GitHub Pages](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html)
+   - [Project view](https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html)
  
 >Project Screenshots
 >
 ![Screen 1, 2](Todo-App-UI-Mobile/images/Project-ScreenShots/My-project-(1).png)
 ![Screen 3, 4](Todo-App-UI-Mobile/images/Project-ScreenShots/My-project-(2).png)
+
+>### HTML, CSS & JavaScript DOM
+ - Digital Clock
+   - [Project view](https://sanjeevsaniel.github.io/EA-projects/Digital-Clock/index.html)
+   
+>Project Screenshot
+>
+ ![](Digital-Clock/Screenshots/Screenshot%202022-08-31%20102104.png)
+ 
+### HTML, CSS & JavaScript
+ - TODO App Js
+   - [Project view](https://sanjeevsaniel.github.io/EA-projects/Todo-App-JS/index.html)
+ 
+>Project Screenshot
+>
