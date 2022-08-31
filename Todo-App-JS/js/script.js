@@ -50,6 +50,11 @@ let acceptData = () => {
   console.log(data);
   // createCards();
   location.reload();
+  resetValue(cardTitle);
+};
+
+const resetValue = (param) => {
+  param.value = "";
 };
 
 let createCards = () => {
@@ -92,8 +97,11 @@ let itemChecked = (e) => {
 
 let deleteCard = (e) => {
   e.parentElement.remove();
+
   data.splice(e.parentElement.id, 1);
+
   localStorage.setItem("data", JSON.stringify(data));
+
   location.reload();
   console.log(data);
 };
