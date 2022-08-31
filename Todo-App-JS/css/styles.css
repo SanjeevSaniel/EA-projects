@@ -40,7 +40,7 @@ ul {
 .container {
   margin: auto;
   width: 90%;
-  min-height: 400px;
+  min-height: 470px;
   background-color: white;
   padding: 2em;
   border-radius: 10px;
@@ -130,7 +130,8 @@ img {
 }
 
 .card:hover {
-  box-shadow: 0 0 20px #cacbcc;
+  /* box-shadow: 0 0 20px #cacbcc; */
+  box-shadow: 0 0 15px #EC7063;
 }
 
 .card__title {
