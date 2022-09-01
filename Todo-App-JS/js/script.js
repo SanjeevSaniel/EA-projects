@@ -69,14 +69,13 @@ let createCards = () => {
           <ul id="items-list-${y}" class="items-list">
           </ul>
           <br /><br />
-          <div class="add-item-button" data-open="modal-list-2">
-            <img src="./images/icons8-plus-50.png" alt="">
+          <div id="add-btn-${y}" class="add-item-button" data-open="modal-list-2" onclick="getBtnID(event)">
+            <img src="./images/icons8-plus-50.png" alt="" >
           </div>
           <div class="delete-button" onclick="deleteCard(this)">
             <img src="./images/bin.svg" alt="">
           </div>
       </div>`);
-    // return cards.appendChild(card);
   });
 
   // Referenced for resolving functionalty error - https://stackoverflow.com/questions/70585031/cant-select-element-with-dom-after-creating-that-element-with-other-function
@@ -84,11 +83,17 @@ let createCards = () => {
   modal();
 };
 
-const addItems = (e) => {
+let btnID = "";
+function getBtnID(e) {
+  btnID =
+    e.target.parentElement.previousSibling.previousSibling.previousSibling
+      .previousSibling.previousSibling.id;
+}
+
+const addItems = () => {
   let itemName = document.getElementById("list-item-title").value;
-  let ul = document.querySelector(".items-list");
   let li = document.createElement("li");
-  ul.appendChild(li);
+  document.getElementById(btnID).appendChild(li);
   li.id = `item-${itemCount++}`;
   li.innerHTML = `${itemName}<button class="btn-done" onclick="itemChecked(this)">done</button>`;
 };
@@ -105,7 +110,7 @@ let deleteCard = (e) => {
 
   localStorage.setItem("data", JSON.stringify(data));
 
-  location.reload();
+  // location.reload();
   console.log(data);
 };
 
