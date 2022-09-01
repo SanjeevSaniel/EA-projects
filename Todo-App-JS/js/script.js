@@ -66,7 +66,7 @@ let createCards = () => {
         <span class="card__title" data-open="card-modal-list" onclick="viewCardDetail(this)">${x.name}</a></span>
           <hr class="card-hr" />
           <br />
-          <ul class="items-list">
+          <ul id="items-list-${y}" class="items-list">
           </ul>
           <br /><br />
           <div class="add-item-button" data-open="modal-list-2">
@@ -84,10 +84,10 @@ let createCards = () => {
   modal();
 };
 
-const addItems = () => {
+const addItems = (e) => {
   let itemName = document.getElementById("list-item-title").value;
-  let li = document.createElement("li");
   let ul = document.querySelector(".items-list");
+  let li = document.createElement("li");
   ul.appendChild(li);
   li.id = `item-${itemCount++}`;
   li.innerHTML = `${itemName}<button class="btn-done" onclick="itemChecked(this)">done</button>`;
@@ -112,6 +112,9 @@ let deleteCard = (e) => {
 const viewCardDetail = (e) => {
   cardDetailTitle.innerText = e.innerText;
   cardDetail.innerHTML = e.parentElement.innerHTML;
+  let children = cardDetail.children;
+  children[6].style.display = "none";
+  children[7].style.display = "none";
 };
 
 modal();

@@ -131,7 +131,7 @@ img {
 
 .card:hover {
   /* box-shadow: 0 0 20px #cacbcc; */
-  box-shadow: 0 0 15px #EC7063;
+  box-shadow: 0 0 15px #ec7063;
 }
 
 .card__title {
@@ -236,6 +236,11 @@ img {
 .modal-dialog > * {
   padding: 1rem;
 }
+
+#modal-list-2 {
+  z-index: 4;
+}
+
 
 .modal-header,
 .modal-footer {
