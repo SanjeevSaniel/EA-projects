@@ -78,8 +78,6 @@ let createCards = () => {
       </div>`);
   });
 
-  // Referenced for resolving functionalty error - https://stackoverflow.com/questions/70585031/cant-select-element-with-dom-after-creating-that-element-with-other-function
-
   modal();
 };
 
