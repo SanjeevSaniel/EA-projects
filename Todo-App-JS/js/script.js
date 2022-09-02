@@ -118,12 +118,12 @@ const viewCardDetail = (e) => {
   cardDetailTitle.innerText = e.innerText;
   cardDetail.innerHTML = e.parentElement.innerHTML;
   let children = cardDetail.children;
-  // children[6].style.display = "none";
+  children[6].style.display = "none";
   // children[6].setAttribute("data-modal", "modal-list-3");
-  children[6].addEventListener("click", function () {
-    document.getElementById("modal-list-3").style.visibility = "visible";
-    document.getElementById("modal-list-3").style.opacity = 1;
-  });
+  // children[6].addEventListener("click", function () {
+  //   document.getElementById("modal-list-3").style.visibility = "visible";
+  //   document.getElementById("modal-list-3").style.opacity = 1;
+  // });
   children[7].style.display = "none";
 };
 

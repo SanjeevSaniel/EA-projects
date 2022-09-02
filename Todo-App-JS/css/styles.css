@@ -38,6 +38,7 @@ ul {
 
 /* Container */
 .container {
+  position: relative;
   margin: auto;
   width: 90%;
   min-height: 470px;
