@@ -110,7 +110,7 @@ let deleteCard = (e) => {
 
   localStorage.setItem("data", JSON.stringify(data));
 
-  // location.reload();
+  location.reload();
   console.log(data);
 };
 
@@ -133,13 +133,17 @@ const viewCardDetail = (e) => {
 // let modalCl = document.querySelector(".modal-close");
 
 const modalClose = () => {
-    document.getElementById("modal-list-3").style.visibility = "hidden";
-    document.getElementById("modal-list-3").style.opacity = 0;
+  document.getElementById("modal-list-3").style.visibility = "hidden";
+  document.getElementById("modal-list-3").style.opacity = 0;
 };
 
 modal();
 (() => {
   data = JSON.parse(localStorage.getItem("data")) || [];
   console.log(data);
+  if (data.length === 0) {
+    document.getElementById("message").style.visibility = "visible";
+    document.getElementById("message").style.opacity = 1;
+  }
   createCards();
 })();
