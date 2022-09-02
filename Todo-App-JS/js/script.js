@@ -114,8 +114,6 @@ let deleteCard = (e) => {
   console.log(data);
 };
 
-// const modals = document.querySelectorAll("[data-modal]");
-
 const viewCardDetail = (e) => {
   cardDetailTitle.innerText = e.innerText;
   cardDetail.innerHTML = e.parentElement.innerHTML;
@@ -130,8 +128,6 @@ const viewCardDetail = (e) => {
 };
 
 // Card View add item modal
-// let modalCl = document.querySelector(".modal-close");
-
 const modalClose = () => {
   document.getElementById("modal-list-3").style.visibility = "hidden";
   document.getElementById("modal-list-3").style.opacity = 0;
