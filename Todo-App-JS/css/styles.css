@@ -238,9 +238,8 @@ img {
 }
 
 #modal-list-2 {
-  z-index: 4;
+  z-index: 3;
 }
-
 
 .modal-header,
 .modal-footer {
@@ -304,3 +303,10 @@ input[type="text"]:focus {
 #back-arrow {
   cursor: pointer;
 }
+
+/* Other testing */
+/* #open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+} */

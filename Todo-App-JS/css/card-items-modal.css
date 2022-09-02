@@ -1,0 +1,18 @@
+/* https://daily-dev-tips.com/posts/vanilla-javascript-modal-pop-up/ */
+
+#modal-list-3 {
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+}
+
+#modal-list-3 .modal-dialog {
+  opacity: 1;
+  transform: translateY(-20%);
+}
+
+/* #open {
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0s;
+} */

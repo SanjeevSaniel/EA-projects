@@ -9,6 +9,7 @@
     <title>Todo App Js</title>
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/card-modal.css">
+    <link rel="stylesheet" href="./css/card-items-modal.css">
     <link rel="stylesheet" href="./css/animations.css">
 
     <!-- Roboto -->
@@ -74,7 +75,49 @@
             </footer>
         </div>
     </div>
-    
+
+    <!-- Card Modal 2 -->
+    <!-- <div id="modal-list-3" class="modal" data-animation="slideInOutDown">
+        <div class="modal-bg modal-exit"></div>
+        <div class="modal-dialog list--modal--dialog">
+            <header class="modal-header">
+                Add New Item
+            </header>
+            <section class="modal-content">
+                <input id="list-item-title" type="text" name="list" />
+            </section>
+            <footer class="modal-footer">
+                <button id="add-card-item" class="close-modal modal-close modal-exit" onclick="addItems(this)">
+                    Add
+                </button>
+                <button class="close-modal modal-close modal-exit">
+                    Close
+                </button>
+            </footer>
+        </div>
+    </div> -->
+
+    <div class="modal" id="modal-list-3">
+        <div class="modal-dialog list--modal--dialog">
+            <header class="modal-header">
+                Add New Item
+            </header>
+            <section class="modal-content">
+                <input id="list-item-title" type="text" name="list" />
+            </section>
+            <footer class="modal-footer">
+                <button id="add-card-item" class="modal-close" onclick="addItems(this); modalClose();">
+                    Add
+                </button>
+                <button onclick="modalClose()">
+                    Close
+                </button>
+            </footer>
+            <!-- <button class="modal-close modal-exit">X</button> -->
+        </div>
+    </div>
+
+
     <!-- Card Expand Modal -->
     <div id="card-modal-list" class="modal card__modal" data-animation="slideInOutTop">
         <div class="modal-dialog">
@@ -152,6 +195,7 @@
         </main>
     </div>
 
+    <script src="./js/card-items-modal.js"></script>
     <script src="./js/script.js"></script>
 </body>
 
