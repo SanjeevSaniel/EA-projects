@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+  <div id="navbar">
+    <span class="navbar__logo">Sanjeev Saniel Kujur</span>
+    <ul class="navbar__links">
+      <li class="link"><a href="">Home</a></li>
+      <li class="link"><a href="#about-section">About</a></li>
+      <li class="link"><a href="#portfolio-section">Portfolio</a></li>
+      <li class="link"><a href="#resume-section">Resume</a></li>
+      <li class="link"><a href="#contact-section">Contact</a></li>
+    </ul>
+  </div>
+  <main class="intro__section">
+    <section class="intro__description">
+      <div class="intro__about">
+        <p class="intro__name">Hi, I am Sanjeev Saniel Kujur</p>
+        <p class="intro__designation">A Front-end Developer</p>
+      </div>
+      <div class="intro__navigations">
+        <p>Get ready to turn ideas into reality</p>
+        <div class="intro__btns">
+          <button class="btn btn--hire">
+            <a href="#contact-section">Hire Me</a>
+          </button>
+          <button class="btn btn--resume">
+            <a href="#resume-section">Get Resume</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="intro__banner">
+      <img src="./images/banner-guy.png" alt="" />
+    </section>
+  </main>
+
+  <section id="about-section" class="about">
+    <img class="about--banner" src="./images/about-me-guy.png" alt="" />
+
+    <section class="about__description">
+      <p class="about--heading">About Me</p>
+      <hr class="about--hr" />
+      <p class="about--para">
+        I'm a web designer & front-end developer with 7 years of professional
+        experience . I'm interested in all kinds of visual communication, but
+        my major focus is on designing web, mobile & tablet interfaces. I also
+        have skills in other fields like branding, icon design or web
+        development.
+      </p>
+      <p class="about--para">
+        I enjoy turning complex problems into simple, beautiful and intuitive
+        designs. When I'm not pushing pixels, you'll find me cooking,
+        gardening or working out in the park.
+      </p>
+      <div class="about__technologies">
+        <p>Languages/Library/Technology</p>
+        <div class="about__logos__container">
+          <img class="about--logos" src="./images/html@2x.png" alt="HTML" />
+          <img class="about--logos" src="./images/css@2x.png" alt="CSS" />
+          <img class="about--logos" src="./images/js@2x.png" alt="Javascript" />
+
+          <img class="about--logos" src="./images/React.svg" alt="React" />
+          <img class="about--logos" src="./images/netlify@2x.png" alt="Netlify" />
+          <img class="about--logos" src="./images/icons8-amazon-web-services-48.png" alt="Amazon Web Services" />
+          <img class="about--logos" src="./images/github@2x.png" alt="Github" />
+        </div>
+      </div>
+    </section>
+  </section>
+  <div class="title--container">
+    <main id="portfolio-section">
+      <h1 class="title">My Portfolio</h1>
+      <hr class="title--hr--one" />
+    </main>
+    <div class="images-container">
+      <ul class="image-gallery">
+        <li>
+          <a href="https://sanjeevsaniel.github.io/EA-projects/HTML-Page/index.html" target="_blank">
+            <img class="image-one" src="./images/Portfolio/1-Backtracking_Small.png" alt="" />
+            <div class="overlay"><span>Backtracking</span></div>
+        </a>
+        </li>
+        <li>
+          <a href="https://sanjeevsaniel.github.io/EA-projects/Todo-App-JS/index.html" target="_blank">
+            <img class="image-two" src="./images/Portfolio/2-TODO_Web_Small.png" alt="" />
+            <div class="overlay"><span>Todo App Web</span></div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html" target="_blank">
+            <img class="image-three" src="./images/Portfolio/3-TODO_Mobile.png" alt="" />
+            <div class="overlay"><span>Todo App Mobile</span></div>
+          </a>
+        </li>
+        <li>
+          <a href="https://sanjeevsaniel.github.io/EA-projects/Digital-Clock/index.html" target="_blank">
+            <img class="image-four" src="./images/Portfolio/4-Digital_Clock.png" alt="" />
+            <div class="overlay"><span>Digital CLock</span></div>
+          </a>
+        </li>
+        
+        <li>
+          <a href="https://react-blog-app-8.netlify.app/" target="_blank">
+            <img src="./images/Portfolio/5-React_Blog_App.png" alt="" />
+            <div class="overlay"><span>React Blog App</span></div>
+          </a>
+        </li>
+        
+    </div>
+  </div>
+
+  <div class="title--container">
+    <main id="resume-section">
+      <h1 class="title">Resume</h1>
+      <hr class="title--hr--two" />
+    </main>
+  </div>
+
+  <section class="resume">
+    <div class="experiences">
+      <div class="work__experiences__container">
+        <p>Work Experience</p>
+        <hr />
+        <div class="work__experiences">
+          <span class="year year--one"> 2020-Present </span>
+          <div class="progress">
+            <div class="circle circle--one"></div>
+            <div class="bar bar--one"></div>
+          </div>
+          <div class="work-details">
+            <p class="work--brief">Software Engineer - FULL TIME</p>
+            <p class="work--company">Coforge</p>
+          </div>
+        </div>
+      </div>
+      <div class="education__container">
+        <p>Education</p>
+        <hr />
+        <div class="education">
+          <span class="year year--two"> 2016-2020 </span>
+          <div class="progress">
+            <div class="circle circle--one"></div>
+            <div class="bar bar--two"></div>
+            <!-- <div class="circle circle--two"></div>
+              <div class="bar bar--two"></div> -->
+          </div>
+          <div class="education--details">
+            <p class="education--college">CV Raman Global University</p>
+            <p class="education--course">
+              Bachelor in Electronics and Telecommunications Engineering
+            </p>
+            <p class="education--brief">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Officiis, laborum ipsa! Dignissimos, dolore nulla eaque animi
+              temporibus cumque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img class="resume--guy" src="./images/resume-guy-img.png" alt="" />
+    <div class="social-links">
+      <img class="social-logos" src="./images/facebook-logo-2019.png" alt="Facebook" title="Facebook">
+      <img class="social-logos" src="./images/behance.png" alt="Behance" title="Behance">
+      <img class="social-logos" src="./images/dribble.png" alt="Dribble" title="Dribble">
+      <img class="social-logos" src="./images/pinterest.png" alt="Pinterest" title="Pinterest">
+      <img class="social-logos" src="./images/skype.png" alt="Skype" title="Skype">
+    </div>
+  </section>
+
+  <div class="title--container">
+    <main>
+      <h1 class="title">What People say about me</h1>
+      <hr class="title--hr--three" />
+    </main>
+  </div>
+
+  <div class="about__container">
+  <div class="about__flex">
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4D03AQEETkr7qNNlrg/profile-displayphoto-shrink_400_400/0/1660418097776?e=1672272000&v=beta&t=NOih4DlLsSQS8gEtEIvDaYkPvAsIEC7yTCMd4SYe8ls" alt="">
+      <span class="identity">Aashish Kumar</span>
+      <span class="organization">Cognizant</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQH2BBZmGYmuSQ/profile-displayphoto-shrink_100_100/0/1610086566807?e=1672272000&v=beta&t=AQY1yZyK_zNdcbLd1hStOnZV_DJYIRGTTdhLIsC471w" alt="">
+      <span class="identity">Shreya</span>
+      <span class="organization">IBM</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4D03AQEYSjSId_rZDg/profile-displayphoto-shrink_100_100/0/1656935386384?e=1672272000&v=beta&t=n60cuMep4jxs_BNmkz-g0QOW0XUfDylh_xxRz0rurb8" alt="">
+      <span class="identity">Satrupa Nandy</span>
+      <span class="organization">TCS</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C5603AQG9rQ46WnHQpw/profile-displayphoto-shrink_100_100/0/1598291155574?e=1672272000&v=beta&t=E-uICBhfF9fkerrEcuBxSD8Ms_GOV5knXgayY_zYMeY" alt="">
+      <span class="identity">Payal Nandy</span>
+      <span class="organization">TCS</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C5603AQEK_reyC2ETmA/profile-displayphoto-shrink_100_100/0/1592664341593?e=1672272000&v=beta&t=IuUyGL_BKRsFrjUa3nJD74bmJoMph-D-jyx-dHMKpbU" alt="">
+      <span class="identity">Sandeep Manna</span>
+      <span class="organization">TCS</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="inside-content">
+        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQGKlSjhlc1u8Q/profile-displayphoto-shrink_400_400/0/1614085971517?e=1672272000&v=beta&t=Q8TrrDAgyl8dwTugkSTPKKKPt_JR9TvW4HLgeIDg-hY" alt="">
+      <span class="identity">Arpit Kumar</span>
+      <span class="organization">ESSPL</span>
+      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+    </div>
+    <!-- <div class="content">Box 7</div>
+    <div class="content">Box 8</div>
+    <div class="content">Box 9</div> -->
+    <button href="" id="loadMore">View more testimonials <img class="arrow-right" src="./images/arrow-2035.png" alt=""></button>
+  </div>
+  
+</div>
+
+  <div class="title--container">
+    <main id="contact-section">
+      <h1 class="title">Contact Me</h1>
+      <hr class="title--hr--four" />
+    </main>
+  </div>
+
+  <div class="contact__container">
+    <div class="connect">
+      <p class="connect--title">Let's connect</p>
+      <p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+        ab illo inventore veritatis et quasi architecto beatae vitae dicta…
+      </p>
+      <div class="connect__container">
+        <p class="connect--options">
+          <img src="./images/email.png" alt="Email" />
+          <span>info@mysite.com</span>
+        </p>
+        <p class="connect--options">
+          <img src="./images/phone.png" alt="Phone" />
+          <span> 1 (123) 456-7890 </span>
+        </p>
+        <p class="connect--options">
+          <img src="./images/marker.png" alt="Location" />
+          <span>1234 Street Ln Virginia Beach, VA 12345</span>
+        </p>
+      </div>
+    </div>
+    <div class="contact__form__box">
+      <div>
+        <p class="form-title">Send me a message</p>
+        <form>
+          <label for="name" required>First & Last Name <span class="required">*</span></label>
+          <input type="text" name="name" id="name" />
+          <label for="phone" required>Phone number <span class="required">*</span></label>
+          <input type="text" name="phone" id="phone" />
+          <label for="email" required>Email address <span class="required">*</span></label>
+          <input type="text" name="email" id="email" />
+          <label for="message" required>Message <span class="required">*</span></label>
+          <textarea name="message" id="message" placeholder="Your message here.."></textarea>
+          <br />
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">
+    <img class="arrow" src="./images/icons8-up-arrow-48.png" alt="" />
+  </button>
+  <footer class="footer">
+    <p>© 2022 Sanjeev Saniel Kujur. All rights reserved.</p>
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
