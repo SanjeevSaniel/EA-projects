@@ -27,7 +27,7 @@ li {
 /* Navbar */
 #navbar {
   background-color: #fbf3e4;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   transition: top 0.5s;
@@ -35,6 +35,8 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
+  box-shadow: 0 0 15px 2px rgb(203, 202, 202);
+  z-index: 3;
 }
 
 .navbar__logo {
@@ -62,6 +64,10 @@ li {
   color: #fca738;
 }
 
+.hamburger {
+  display: none;
+}
+
 /* Introduction Section */
 .intro__section {
   margin-top: 68px;
@@ -73,6 +79,7 @@ li {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: auto;
+  overflow: hidden;
 }
 
 .intro__description {
@@ -83,9 +90,9 @@ li {
   flex-flow: column;
 }
 
-.intro__about {
-  /* padding: 2rem; */
-}
+/* .intro__about {
+  padding: 2rem;
+} */
 
 .intro__name {
   color: #fca738;
@@ -128,6 +135,7 @@ li {
   opacity: 0.99;
   box-shadow: 0 16px 29px #0bbead69;
   transition: all 0.3s ease-in;
+  z-index: 2;
 }
 
 .btn--hire a {
@@ -150,6 +158,7 @@ li {
   opacity: 0.99;
   background-color: #fca738;
   box-shadow: 0 16px 28px #f57f1769;
+  z-index: 2;
 }
 
 .btn--resume a {
@@ -162,6 +171,54 @@ li {
   display: flex;
   justify-content: center;
   padding-right: 5rem;
+  z-index: 2;
+}
+
+/* Wave */
+.ocean {
+  height: 2%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }
 
 .about {
@@ -213,7 +270,7 @@ li {
 }
 
 .about__technologies {
-  padding: 15px;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(214, 210, 210);
   box-sizing: border-box;
@@ -228,6 +285,7 @@ li {
 .about__logos__container {
   display: flex;
   justify-content: space-between;
+  flex-flow: row wrap;
 }
 
 .about--logos {
@@ -645,7 +703,6 @@ label {
 input[type="text"]:focus,
 textarea:focus {
   color: grey;
-
   outline: 2px solid #fca738;
 }
 
@@ -715,4 +772,217 @@ button[type="submit"]:hover {
   background-color: #fbf3e4;
   padding: 30px 0;
   color: grey;
+}
+
+@media screen and (max-width: 800px) {
+  #navbar {
+    max-height: 6rem;
+    padding: 20px 30px;
+  }
+
+  .link {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    color: #000;
+  }
+
+  .navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  .intro__section {
+    margin-top: 68px;
+    position: relative;
+    background-color: #105652;
+    color: white;
+    max-width: 100%;
+    height: 42rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50% 50%;
+    overflow: hidden;
+  }
+
+  .name {
+    display: block;
+  }
+
+  .intro__description {
+    grid-column: 1;
+    grid-row: 1/2;
+    padding: 5rem 3rem;
+    display: flex;
+    flex-flow: column;
+  }
+
+  .intro__banner {
+    grid-column: 1;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: center;
+    padding-right: 5rem;
+    z-index: 2;
+  }
+
+  .intro__name,
+  .intro__designation {
+    font-size: 2rem;
+  }
+
+  .about {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    border-radius: 0;
+    padding: 0.5rem 1rem;
+  }
+
+  .about__description {
+    grid-column: 1;
+    grid-row: 1/2;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .about--heading {
+    font-size: 1.5rem;
+  }
+
+  .about--hr {
+    width: 120px;
+  }
+
+  .about__technologies {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 0;
+    max-width: fit-content;
+    max-height: auto;
+    box-sizing: border-box;
+  }
+
+  .about--para {
+    line-height: 1.5;
+    padding: 0 4rem 0 0.5rem;
+  }
+
+  .about__technologies {
+    margin: 0 2.5rem;
+  }
+
+  .title--container-portfolio {
+    display: none;
+  }
+
+  .resume {
+    margin: 50px auto;
+    padding: 10px 0 0;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    max-width: 66rem;
+    height: fit-content;
+    box-sizing: border-box;
+  }
+
+  .resume--guy {
+    grid-row: 1/2;
+    grid-column: 1;
+    margin: 0;
+    width: 100%;
+  }
+
+  .social-links {
+    grid-row: 2/3;
+    grid-column: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: 1rem 2rem;
+    padding: 0.5rem 2.2rem;
+  }
+
+  .experiences {
+    grid-row: 3/4;
+    grid-column: 1;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .work__experiences__container {
+    max-width: 100%;
+    margin: 1rem 0 5rem;
+  }
+
+  .work__experiences__container > p,
+  .education__container > p {
+    margin: 1rem;
+  }
+
+  .work__experiences,
+  .education {
+    margin: 2rem;
+  }
+
+  .bar--one {
+    height: 6rem;
+  }
+
+  .year--one {
+    width: max-content;
+    padding: 0.4rem 0.8rem;
+    left: 1.8rem;
+    box-shadow: 0 0 5px 1px #ffd39a;
+    box-sizing: border-box;
+    /* left: 535px; */
+  }
+
+  .bar--two {
+    height: 12rem;
+  }
+
+  .year--two {
+    position: absolute;
+    width: max-content;
+    left: 2rem;
+    top: 2.2rem;
+    padding: 0.4rem 0.8rem;
+    box-shadow: 0 0 5px 1px #ffd39a;
+    box-sizing: border-box;
+  }
+
+  .education--course {
+    margin-top: 3rem;
+  }
+
+  .social-logos {
+    width: 3rem;
+    height: 3rem;
+    /* margin: 11px; */
+  }
+
+  .contact__container {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+  }
+
+  textarea {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 60px;
+  }
 }
