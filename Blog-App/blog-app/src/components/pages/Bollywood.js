@@ -9,25 +9,32 @@ const Bollywood = () => {
   const [ads, setAds] = useState([]);
   const [topPosts, setTopPosts] = useState([]);
 
+  async function fetchData(api, setter) {
+    let response = await axios.get(api);
+    let data = await response.data;
+    setter(data);
+  }
+
   useEffect(() => {
-    axios.get("/api/Bollywood.json").then((response) => {
-      setArticles(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/Bollywood.json",
+      setArticles
+    );
   }, [articles]);
 
   useEffect(() => {
-    axios.get("/api/BollywoodAds.json").then((response) => {
-      setAds(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodAds.json",
+      setAds
+    );
   }, [ads]);
 
   useEffect(() => {
-    axios.get("/api/BollywoodTopPosts.json").then((response) => {
-      setTopPosts(response.data);
-    });
+    fetchData(
+      "https://prepbytes-blog-app-server.herokuapp.com/api/BollywoodTopPosts.json",
+      setTopPosts
+    );
   }, [topPosts]);
-
-  // if (!articles || !ads || (!articles && !ads)) return null;
 
   return (
     <div className="Bollywood">

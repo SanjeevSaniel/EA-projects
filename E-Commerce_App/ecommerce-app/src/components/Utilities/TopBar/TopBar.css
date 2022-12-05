@@ -1,0 +1,10 @@
+.topbar {
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.selectables {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
+}
