@@ -1,0 +1,15 @@
+.user-profile {
+  position: relative;
+}
+
+.user-profile button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  /* background-color: antiquewhite; */
+}
+
+.user-profile button span {
+  margin-right: 6px;
+}

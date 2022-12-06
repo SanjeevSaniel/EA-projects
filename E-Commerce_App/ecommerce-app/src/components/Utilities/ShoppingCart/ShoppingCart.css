@@ -1,0 +1,12 @@
+.shopping-cart {
+  position: relative;
+}
+
+.shopping-cart button {
+  display: flex;
+  border: 0;
+}
+
+.shopping-cart button span {
+  margin-right: 6px;
+}

@@ -11,8 +11,8 @@
   width: 70px;
   height: 30px;
   /* border-radius: 6px; */
-  color: #f9f9f9;
-  background: #252525;
+  color: #0b0a0a;
+  background: #ffffff;
   border: 0;
   cursor: pointer;
 }
@@ -27,9 +27,9 @@
   transition: 0.3s;
 }
 
-.dropdown > button:hover {
-  background: #3a3a3a;
-}
+/* .dropdown > button:hover {
+  background: #f3a8a8;
+} */
 
 .dropdown.open > button {
   background: #15a480;
@@ -47,7 +47,7 @@
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
   border-top: 0;
-  background: #3e3e3e;
+  background: #ffffff;
   translate: 0 -20px;
   transition: 0.4s;
 }
@@ -60,7 +60,8 @@
 }
 
 .menu button:hover {
-  background: #383838;
+  background: #15a480;
+  /* background: #383838; */
 }
 
 .dropdown.open .menu {

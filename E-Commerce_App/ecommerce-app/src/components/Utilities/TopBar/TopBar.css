@@ -1,10 +1,20 @@
 .topbar {
   display: flex;
-  /* justify-content: space-around; */
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(154, 105, 105);
+  padding: 3px 0;
 }
 
 .selectables {
   display: flex;
   justify-content: space-evenly;
   width: 10rem;
+}
+
+.actionables {
+  display: flex;
+  justify-content: space-around;
+  width: 20rem;
+  max-height: max-content;
 }

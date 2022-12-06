@@ -1,5 +1,20 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #eb5358;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f57d81;
+}
+
 .App {
   text-align: center;
+  /* height: 2000px; */
+  transition: all 0.3s;
 }
 
 .App-logo {
