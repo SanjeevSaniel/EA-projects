@@ -30,8 +30,8 @@ const Dropdown = (props) => {
   return (
     <Fragment>
       <div className="dropdown" id={props.id}>
-        <button onClick={(event) => handleDropdownClicked(event)}>
-          <span>{props.id === "currency" ? currency : language}</span>
+        <button className="btn-dropdown" onClick={(event) => handleDropdownClicked(event)}>
+          <span className="dropdown-value">{props.id === "currency" ? currency : language}</span>
           <span id={`${props.id}-icon`} className="material-symbols-outlined">
             expand_more
           </span>
