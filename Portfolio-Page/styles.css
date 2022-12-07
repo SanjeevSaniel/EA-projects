@@ -35,7 +35,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 15px 50px;
-  box-shadow: 0 0 15px 2px rgb(203, 202, 202);
+  box-shadow: 0 0 15px 2px rgb(232, 230, 230);
   z-index: 3;
 }
 
@@ -45,7 +45,7 @@ li {
   font-size: 1.5rem;
   font-weight: 600;
   color: #105652;
-  text-shadow: 5px 5px 10px rgb(144, 143, 143);
+  text-shadow: 5px 5px 10px rgb(176, 168, 168);
 }
 
 .navbar__links {
