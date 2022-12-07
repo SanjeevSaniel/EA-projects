@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio Page</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
@@ -14,13 +16,63 @@
   <div id="navbar">
     <span class="navbar__logo">Sanjeev Saniel Kujur</span>
     <ul class="navbar__links">
-      <li class="link"><a href="">Home</a></li>
+      <li class="link"><a href="#">Home</a></li>
       <li class="link"><a href="#about-section">About</a></li>
       <li class="link"><a href="#portfolio-section">Portfolio</a></li>
       <li class="link"><a href="#resume-section">Resume</a></li>
       <li class="link"><a href="#contact-section">Contact</a></li>
     </ul>
-    <span class="hamburger">|||</span>
+    <div class="dropdown" id="hamburger">
+      <button id="menu-icon" onclick="handleDropdownClicked(event)">
+        <span id="icon" class="material-symbols-outlined"> menu</span>
+      </button>
+      <div class="menu">
+        <a href="#">
+          <button>
+            <span class="material-symbols-outlined">
+              home
+            </span>
+            <span>Home</span>
+          </button>
+        </a>
+
+        <a href="#about-section">
+          <button>
+            <span class="material-symbols-outlined">description</span>
+            About
+          </button>
+        </a>
+
+        <!-- <a href="#portfolio-section">
+          <button>
+            <span class="material-symbols-outlined">
+              dashboard
+            </span>
+            Portfolio
+          </button>
+        </a> -->
+
+        <a href="#resume-section">
+          <button>
+            <span class="material-symbols-outlined">
+              summarize
+            </span>
+            Resume
+          </button>
+        </a>
+
+        <a href="#contact-section">
+          <button>
+            <span class="material-symbols-outlined">
+              contact_page
+            </span>
+            Contact
+          </button>
+        </a>
+
+
+      </div>
+    </div>
   </div>
   <main class="intro__section">
     <section class="intro__description">
@@ -94,7 +146,7 @@
           <a href="https://sanjeevsaniel.github.io/EA-projects/HTML-Page/index.html" target="_blank">
             <img class="image-one" src="./images/Portfolio/1-Backtracking_Small.png" alt="" />
             <div class="overlay"><span>Backtracking</span></div>
-        </a>
+          </a>
         </li>
         <li>
           <a href="https://sanjeevsaniel.github.io/EA-projects/Todo-App-JS/index.html" target="_blank">
@@ -102,7 +154,7 @@
             <div class="overlay"><span>Todo App Web</span></div>
           </a>
         </li>
-        
+
         <li>
           <a href="https://sanjeevsaniel.github.io/EA-projects/Todo-App-UI-Mobile/index.html" target="_blank">
             <img class="image-three" src="./images/Portfolio/3-TODO_Mobile.png" alt="" />
@@ -115,14 +167,14 @@
             <div class="overlay"><span>Digital CLock</span></div>
           </a>
         </li>
-        
+
         <li>
           <a href="https://react-blog-app-8.netlify.app/" target="_blank">
             <img src="./images/Portfolio/5-React_Blog_App.png" alt="" />
             <div class="overlay"><span>React Blog App</span></div>
           </a>
         </li>
-        
+
     </div>
   </div>
 
@@ -193,62 +245,75 @@
   </div>
 
   <div class="about__container">
-  <div class="about__flex">
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4D03AQEETkr7qNNlrg/profile-displayphoto-shrink_400_400/0/1660418097776?e=1672272000&v=beta&t=NOih4DlLsSQS8gEtEIvDaYkPvAsIEC7yTCMd4SYe8ls" alt="">
-      <span class="identity">Aashish Kumar</span>
-      <span class="organization">Cognizant</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+    <div class="about__flex">
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQEETkr7qNNlrg/profile-displayphoto-shrink_400_400/0/1660418097776?e=1672272000&v=beta&t=NOih4DlLsSQS8gEtEIvDaYkPvAsIEC7yTCMd4SYe8ls"
+            alt="">
+          <span class="identity">Aashish Kumar</span>
+          <span class="organization">Cognizant</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQH2BBZmGYmuSQ/profile-displayphoto-shrink_100_100/0/1610086566807?e=1672272000&v=beta&t=AQY1yZyK_zNdcbLd1hStOnZV_DJYIRGTTdhLIsC471w" alt="">
-      <span class="identity">Shreya</span>
-      <span class="organization">IBM</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQH2BBZmGYmuSQ/profile-displayphoto-shrink_100_100/0/1610086566807?e=1672272000&v=beta&t=AQY1yZyK_zNdcbLd1hStOnZV_DJYIRGTTdhLIsC471w"
+            alt="">
+          <span class="identity">Shreya</span>
+          <span class="organization">IBM</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4D03AQEYSjSId_rZDg/profile-displayphoto-shrink_100_100/0/1656935386384?e=1672272000&v=beta&t=n60cuMep4jxs_BNmkz-g0QOW0XUfDylh_xxRz0rurb8" alt="">
-      <span class="identity">Satrupa Nandy</span>
-      <span class="organization">TCS</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4D03AQFakuBAON2emg/profile-displayphoto-shrink_100_100/0/1667899168780?e=1675900800&v=beta&t=_Y9PscK15JJguFpOKlyMJAFMvkhPtXpinCq0Esn0lCc"
+            alt="">
+          <span class="identity">Satrupa Nandy</span>
+          <span class="organization">TCS</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C5603AQG9rQ46WnHQpw/profile-displayphoto-shrink_100_100/0/1598291155574?e=1672272000&v=beta&t=E-uICBhfF9fkerrEcuBxSD8Ms_GOV5knXgayY_zYMeY" alt="">
-      <span class="identity">Payal Nandy</span>
-      <span class="organization">TCS</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQG9rQ46WnHQpw/profile-displayphoto-shrink_100_100/0/1598291155574?e=1672272000&v=beta&t=E-uICBhfF9fkerrEcuBxSD8Ms_GOV5knXgayY_zYMeY"
+            alt="">
+          <span class="identity">Payal Nandy</span>
+          <span class="organization">TCS</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C5603AQEK_reyC2ETmA/profile-displayphoto-shrink_100_100/0/1592664341593?e=1672272000&v=beta&t=IuUyGL_BKRsFrjUa3nJD74bmJoMph-D-jyx-dHMKpbU" alt="">
-      <span class="identity">Sandeep Manna</span>
-      <span class="organization">TCS</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C5603AQEK_reyC2ETmA/profile-displayphoto-shrink_100_100/0/1592664341593?e=1672272000&v=beta&t=IuUyGL_BKRsFrjUa3nJD74bmJoMph-D-jyx-dHMKpbU"
+            alt="">
+          <span class="identity">Sandeep Manna</span>
+          <span class="organization">TCS</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <div class="content">
-      <div class="inside-content">
-        <img class="avatar" src="https://media-exp1.licdn.com/dms/image/C4E03AQGKlSjhlc1u8Q/profile-displayphoto-shrink_400_400/0/1614085971517?e=1672272000&v=beta&t=Q8TrrDAgyl8dwTugkSTPKKKPt_JR9TvW4HLgeIDg-hY" alt="">
-      <span class="identity">Arpit Kumar</span>
-      <span class="organization">ESSPL</span>
-      <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      <div class="content">
+        <div class="inside-content">
+          <img class="avatar"
+            src="https://media-exp1.licdn.com/dms/image/C4E03AQGKlSjhlc1u8Q/profile-displayphoto-shrink_400_400/0/1614085971517?e=1672272000&v=beta&t=Q8TrrDAgyl8dwTugkSTPKKKPt_JR9TvW4HLgeIDg-hY"
+            alt="">
+          <span class="identity">Arpit Kumar</span>
+          <span class="organization">ESSPL</span>
+          <p class="feedback">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+        </div>
       </div>
-    </div>
-    <!-- <div class="content">Box 7</div>
+      <!-- <div class="content">Box 7</div>
     <div class="content">Box 8</div>
     <div class="content">Box 9</div> -->
-    <button href="" id="loadMore">View more testimonials <img class="arrow-right" src="./images/arrow-2035.png" alt=""></button>
+      <button id="loadMore">View more testimonials <img class="arrow-right" src="./images/arrow-2035.png"
+          alt=""></button>
+    </div>
+
   </div>
-  
-</div>
 
   <div class="title--container">
     <main id="contact-section">
