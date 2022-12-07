@@ -1,0 +1,28 @@
+.services-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+  margin: 2rem 7rem;
+  padding: 2rem;
+}
+
+.service-box {
+  text-align: center;
+  box-sizing: border-box;
+  width: 20rem;
+  /* align-items: center; */
+}
+
+.service-box img {
+  width: 40px;
+  height: 40px;
+}
+
+.service-box .label {
+  margin: 1rem;
+}
+
+.service-box p {
+  font-size: 13px;
+}
