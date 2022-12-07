@@ -29,6 +29,7 @@ const Navbar = () => {
     <React.Fragment>
       <nav className="navbar">
         <header className="logo">
+          <div class="item blue"></div>
           <span className="title">iSHOP</span>
         </header>
         <ul className="list">

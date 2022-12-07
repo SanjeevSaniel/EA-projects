@@ -27,11 +27,19 @@
   font-weight: 500;
 } */
 
+.item.blue::before {
+  position: absolute;
+  top: 1.9rem;
+  content: "●";
+  color: #0074d9;
+}
+
 .logo .title {
   font-size: 3rem;
   font-weight: 700;
   padding-bottom: 0.5rem;
   color: #eb5358;
+  text-shadow: 2px 2px 10px #f38e91;
 }
 
 .list {
