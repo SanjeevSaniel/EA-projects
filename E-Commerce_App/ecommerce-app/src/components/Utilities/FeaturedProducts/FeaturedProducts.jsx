@@ -1,0 +1,43 @@
+import React, { useState, useEffect } from "react";
+import ReactStars from "react-stars";
+
+import "./FeaturedProducts.css";
+// import AirPodsMax from "./images/airpods-max-select-green-202011.png";
+
+const FeaturedProducts = () => {
+  const data = require("./data.json");
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setProducts(data);
+  }, [data]);
+
+  return (
+    <div className="featured-products-container">
+      <h2>Featured Products</h2>
+
+      {products.map((product, index) => {
+        return (
+          <div key={index} className="featured-product">
+            <img src={product.image} alt={product.name} />
+            <div className="featured-product-info">
+              <div className="featured-product-name">{product.name}</div>
+              <ReactStars
+                count={5}
+                value={product.rating}
+                size={16}
+                color2={"#ffd700"}
+              />
+              <div>
+                <span className="new-cost">₹ {product.newPrice}</span>
+                <span className="old-cost">₹ {product.oldPrice}</span>
+              </div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default FeaturedProducts;

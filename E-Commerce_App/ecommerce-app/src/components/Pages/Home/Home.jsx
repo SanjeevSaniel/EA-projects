@@ -1,4 +1,5 @@
 import React from "react";
+import FeaturedProducts from "../../Utilities/FeaturedProducts/FeaturedProducts";
 import ProductShowcase from "../../Utilities/ProductShowcase/ProductShowcase";
 import Services from "../../Utilities/Services/Services";
 import "./Home.css";
@@ -12,6 +13,7 @@ const Home = () => {
       </div>
       <ProductShowcase />
       <Services />
+      <FeaturedProducts />
     </React.Fragment>
   );
 };
