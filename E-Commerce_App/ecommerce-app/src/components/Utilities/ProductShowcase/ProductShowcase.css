@@ -9,6 +9,7 @@
     rgba(12, 6, 51, 1) 0%,
     rgba(193, 99, 217, 1) 100%
   );
+  border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% 
 }
 
 .box-ProductShowcase-one {
