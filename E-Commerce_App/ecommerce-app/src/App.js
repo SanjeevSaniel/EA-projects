@@ -30,9 +30,10 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
-      <hr className="hr-one" />
-      <About />
-      <Footer />
+      <section className="app-footer">
+        <About />
+        <Footer />
+      </section>
     </div>
   );
 }

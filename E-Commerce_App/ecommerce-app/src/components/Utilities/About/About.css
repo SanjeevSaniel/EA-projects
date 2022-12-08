@@ -6,12 +6,16 @@
   margin: 1rem 3rem;
   padding: 2rem;
   border-bottom: 1px solid rgb(216, 219, 218);
+  border-radius: 10% 100% 66% 100% / 0% 68% 32% 56%;
+  /* border-radius: 29% 71% 49% 51% / 44% 68% 32% 56%; */
 }
 
 .about-title {
   font-size: 40px;
   font-weight: 600;
-  color: rgb(176, 180, 178);
+  /* color: rgb(176, 180, 178); */
+  color: azure;
+  text-shadow: 1px 1px 1px;
 }
 
 .box-about {
