@@ -10,6 +10,8 @@ import IPad from "./components/Pages/iPad";
 import Macbook from "./components/Pages/Macbook";
 import Accessories from "./components/Pages/Accessories";
 import "./App.css";
+import About from "./components/Utilities/About/About";
+import Footer from "./components/Utilities/Footer/Footer";
 
 function App() {
   return (
@@ -28,6 +30,9 @@ function App() {
           </Route>
         </Routes>
       </BrowserRouter>
+      <hr className="hr-one" />
+      <About />
+      <Footer />
     </div>
   );
 }

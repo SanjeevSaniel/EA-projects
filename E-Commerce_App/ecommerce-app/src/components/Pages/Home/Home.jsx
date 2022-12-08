@@ -1,6 +1,4 @@
 import React from "react";
-import About from "../../Utilities/About/About";
-import Footer from "../../Utilities/Footer/Footer";
 import ProductShowcase from "../../Utilities/ProductShowcase/ProductShowcase";
 import Services from "../../Utilities/Services/Services";
 import "./Home.css";
@@ -14,9 +12,6 @@ const Home = () => {
       </div>
       <ProductShowcase />
       <Services />
-      <hr className="hr-one" />
-      <About />
-      <Footer />
     </React.Fragment>
   );
 };
