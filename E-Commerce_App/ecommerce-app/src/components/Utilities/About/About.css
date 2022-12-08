@@ -3,13 +3,12 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   justify-items: center;
-  margin: 1rem 5rem;
+  margin: 1rem 3rem;
   padding: 2rem;
   border-bottom: 1px solid rgb(216, 219, 218);
 }
 
 .about-title {
-  /* margin-top: 0; */
   font-size: 40px;
   font-weight: 600;
   color: rgb(176, 180, 178);

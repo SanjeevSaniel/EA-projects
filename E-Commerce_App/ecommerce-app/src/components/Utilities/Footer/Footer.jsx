@@ -65,6 +65,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <hr className="hr-one" />
       <div className="payment-gateways">
         <img className="payment-logo payment-logo-five" src={Amex} alt="Amex" />
         <img
