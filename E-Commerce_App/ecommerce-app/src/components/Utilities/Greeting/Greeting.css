@@ -25,7 +25,7 @@
 .greeting-title-two {
   box-sizing: border-box;
   font-size: 1.2rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .greeting-title-one span,

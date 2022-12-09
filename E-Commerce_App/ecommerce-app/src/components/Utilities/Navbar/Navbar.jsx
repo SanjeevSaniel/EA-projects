@@ -29,7 +29,7 @@ const Navbar = () => {
     <React.Fragment>
       <nav className="navbar">
         <header className="logo">
-          <div className="item blue"></div>
+          {/* <div className="item blue"></div> */}
           <span className="title">iSHOP</span>
         </header>
         <ul className="list">

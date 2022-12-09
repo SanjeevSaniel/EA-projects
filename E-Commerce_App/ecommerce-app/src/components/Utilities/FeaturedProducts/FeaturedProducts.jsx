@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import ReactStars from "react-stars";
-
 import "./FeaturedProducts.css";
 // import AirPodsMax from "./images/airpods-max-select-green-202011.png";
 
@@ -19,22 +18,24 @@ const FeaturedProducts = () => {
         <div className="featured-products-list">
           {products.map((product, index) => {
             return (
-              <div key={index} className="featured-product">
-                <img src={product.image} alt={product.name} />
-                <div className="featured-product-info">
-                  <div className="featured-product-name">{product.name}</div>
-                  <ReactStars
-                    count={5}
-                    value={product.rating}
-                    size={16}
-                    color2={"#ffd700"}
-                  />
-                  <div>
-                    <span className="new-cost">₹ {product.newPrice}</span>
-                    <span className="old-cost">₹ {product.oldPrice}</span>
+              <a className="feautured-product-link" href="/" target={"_blank"}>
+                <div key={index} className="featured-product">
+                  <img src={product.image} alt={product.name} />
+                  <div className="featured-product-info">
+                    <div className="featured-product-name">{product.name}</div>
+                    <ReactStars
+                      count={5}
+                      value={product.rating}
+                      size={16}
+                      color2={"#ffd700"}
+                    />
+                    <div>
+                      <span className="new-cost">₹ {product.newPrice}</span>
+                      <span className="old-cost">₹ {product.oldPrice}</span>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </a>
             );
           })}
         </div>

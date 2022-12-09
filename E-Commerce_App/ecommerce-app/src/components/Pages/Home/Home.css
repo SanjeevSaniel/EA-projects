@@ -5,16 +5,15 @@
   max-height: fit-content;
 }
 
-.banner-title {
+/* .banner-title {
   position: absolute;
   top: 35%;
   left: 31%;
   z-index: 2;
   font-size: 100px;
   color: aliceblue;
-  /* backdrop-filter: blur(10px); */
   width: fit-content;
-}
+} */
 
 #banner-video {
   max-width: 80rem;
@@ -22,6 +21,8 @@
   filter: brightness(90%);
   border-radius: 10px;
   z-index: 1;
+  visibility: hidden;
+  /* transition: all 1s linear; */
 }
 
 .hr-one {

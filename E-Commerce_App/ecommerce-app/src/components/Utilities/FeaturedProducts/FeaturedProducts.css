@@ -9,6 +9,11 @@
   margin: 2rem;
 }
 
+.feautured-product-link {
+  text-decoration: none;
+  color: black;
+}
+
 .featured-product {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr;
@@ -26,6 +31,7 @@
 
 .featured-product:hover {
   box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.212);
+  color: black;
 }
 
 .featured-product img {
