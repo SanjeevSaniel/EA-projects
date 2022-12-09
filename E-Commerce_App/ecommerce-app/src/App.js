@@ -22,9 +22,6 @@ import Footer from "./components/Utilities/Footer/Footer";
 import Greeting from "./components/Utilities/Greeting/Greeting";
 
 function App() {
-  // const location = useLocation();
-
-  // const currentKey = location.pathname.split("/")[1] || "/";
   const timeout = { enter: 600, exit: 600 };
 
   return (
