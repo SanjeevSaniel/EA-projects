@@ -3,8 +3,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Switch,
-  useLocation,
 } from "react-router-dom";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Navbar from "./components/Utilities/Navbar/Navbar";
