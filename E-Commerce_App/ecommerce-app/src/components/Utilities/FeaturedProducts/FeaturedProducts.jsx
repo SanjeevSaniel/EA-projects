@@ -13,32 +13,33 @@ const FeaturedProducts = () => {
   }, [data]);
 
   return (
-    <div className="featured-products-container">
-      <h2>Featured Products</h2>
-
-      <div className="featured-products-list">
-        {products.map((product, index) => {
-          return (
-            <div key={index} className="featured-product">
-              <img src={product.image} alt={product.name} />
-              <div className="featured-product-info">
-                <div className="featured-product-name">{product.name}</div>
-                <ReactStars
-                  count={5}
-                  value={product.rating}
-                  size={16}
-                  color2={"#ffd700"}
-                />
-                <div>
-                  <span className="new-cost">₹ {product.newPrice}</span>
-                  <span className="old-cost">₹ {product.oldPrice}</span>
+    <React.Fragment>
+      <div className="featured-products-container">
+        <h2 className="featured-products-heading">Featured Products</h2>
+        <div className="featured-products-list">
+          {products.map((product, index) => {
+            return (
+              <div key={index} className="featured-product">
+                <img src={product.image} alt={product.name} />
+                <div className="featured-product-info">
+                  <div className="featured-product-name">{product.name}</div>
+                  <ReactStars
+                    count={5}
+                    value={product.rating}
+                    size={16}
+                    color2={"#ffd700"}
+                  />
+                  <div>
+                    <span className="new-cost">₹ {product.newPrice}</span>
+                    <span className="old-cost">₹ {product.oldPrice}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
       </div>
-    </div>
+    </React.Fragment>
   );
 };
 

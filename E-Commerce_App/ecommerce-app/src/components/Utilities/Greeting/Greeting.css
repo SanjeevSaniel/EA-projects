@@ -1,0 +1,121 @@
+@import "https://fonts.googleapis.com/css?family=Baloo+Paaji";
+
+/* .greetings {
+  position: fixed;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 2;
+} */
+
+.greeting-container {
+  font-family: "Baloo Paaji", cursive;
+  /* background: #1e90ff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  max-height: 1.5rem;
+  position: relative;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.greeting-title-one,
+.greeting-title-two {
+  box-sizing: border-box;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.greeting-title-one span,
+.greeting-title-two span {
+  display: inline;
+  text-align: center;
+  width: 1fr;
+  /* float: left; */
+  margin: 0 0.2rem;
+  color: rgb(90, 88, 88);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  transform: translateY(-50px);
+  opacity: 0;
+  animation-name: titleAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+}
+
+.greeting-title-one span {
+  animation-delay: 1.6s;
+  animation-fill-mode: forwards;
+  /* -webkit-animation-fill-mode: forwards; */
+}
+
+.greeting-title-one span:first-child {
+  animation-delay: 1.7s;
+}
+
+.greeting-title-one span:last-child {
+  color: #c00e41;
+  /* color: #ffe221; */
+  animation-delay: 1.5s;
+}
+
+/* .greeting-title-two {
+  top: 0;
+  position: absolute;
+} */
+
+.greeting-title-two span {
+  animation-delay: 5.1s;
+  animation-fill-mode: forwards;
+  /* -webkit-animation-fill-mode: forwards; */
+}
+
+.greeting-title-two span:first-child {
+  animation-delay: 5.2s;
+}
+
+.greeting-title-two span:last-child {
+  color: #c00e41;
+  /* color: #ffe221; */
+  animation-delay: 5s;
+}
+
+.usechrome {
+  font-size: 10px;
+  color: #fff;
+  font-family: helvetica, arial;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+@keyframes titleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 80%);
+  }
+  20% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  80% {
+    transform: translateY(0);
+    opacity: 1;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 15%);
+  }
+  100% {
+    transform: translateY(50px);
+    opacity: 0;
+    -webkit-clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 0%, 0 100%, 0 100%);
+  }
+}

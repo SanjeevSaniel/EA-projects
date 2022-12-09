@@ -12,11 +12,13 @@ import Accessories from "./components/Pages/Accessories";
 import "./App.css";
 import About from "./components/Utilities/About/About";
 import Footer from "./components/Utilities/Footer/Footer";
+import Greeting from "./components/Utilities/Greeting/Greeting";
 
 function App() {
   return (
     <div className="App">
       <TopBar />
+      <Greeting/>
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Navbar />}>

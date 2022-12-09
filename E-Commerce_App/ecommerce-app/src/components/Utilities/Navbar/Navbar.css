@@ -12,24 +12,13 @@
 .logo {
   display: flex;
   align-items: center;
-  margin: 1rem 0 0;
+  /* margin: 1rem 0 0; */
   transition: all 1s;
 }
 
-/* .logo span {
-  padding: 0.5rem;
-} */
-
-/* .logo .the {
-  display: inline-block;
-  transform: rotate(-90deg);
-  font-size: 2.6rem;
-  font-weight: 500;
-} */
-
 .item.blue::before {
   position: absolute;
-  top: 1.9rem;
+  top: .9rem;
   content: "●";
   color: #0074d9;
 }
