@@ -10,3 +10,7 @@
 .shopping-cart button span {
   margin-right: 6px;
 }
+
+.cart-link {
+  text-decoration: none;
+}
