@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./../Navbar/Navbar";
 import Home from "./../../Pages/Home/Home";
-import Store from "./../../Pages/Store";
+import Store from "./../../Pages/Store/Store";
 import IPhone from "./../../Pages/iPhone";
 import IPad from "./../../Pages/iPad";
 import Macbook from "./../../Pages/Macbook";
