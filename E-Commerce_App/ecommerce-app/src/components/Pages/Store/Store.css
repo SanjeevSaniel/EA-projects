@@ -1,0 +1,35 @@
+.store__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto;
+  max-width: 80rem;
+  margin: 5rem auto;
+  text-align: left;
+}
+
+.store__accessories__container {
+  max-width: 15rem;
+}
+
+.store__sidebar__headings {
+  margin: 0.5rem 0 1rem;
+}
+
+.store__accessories__items,
+.store__accessories__prices,
+.store__accessorries__colors {
+  background: #eef1f0;
+  margin: 0.5rem 0 1rem;
+}
+
+.store__accessories__list,
+.store__accessories__prices,
+.store__accessorries__colors {
+  padding: 1rem;
+}
+
+.store__accessories__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
