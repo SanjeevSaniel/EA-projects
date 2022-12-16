@@ -1,7 +1,7 @@
 import * as React from "react";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import { red } from "@mui/material/colors";
+// import { red } from "@mui/material/colors";
 
 export default function ColorToggleButton() {
   const [alignment, setAlignment] = React.useState("web");
@@ -9,7 +9,7 @@ export default function ColorToggleButton() {
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
   };
-  const color = red[500];
+  // const color = red[500];
 
   return (
     <ToggleButtonGroup
@@ -20,7 +20,7 @@ export default function ColorToggleButton() {
       aria-label="Platform"
     >
       <ToggleButton
-        sx={{ backgroundColor: "green", color: { color } }}
+        // sx={{ backgroundColor: "green", color: { color } }}
         value="web"
       >
         Web

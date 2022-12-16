@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
         <div className="featured-products-main-container">
           <div className="left-box">
             <button id="btn-left-arrow" onClick={handleLeftClick}>
-              Left
+              <span className="material-symbols-outlined">arrow_back_ios</span>
             </button>
           </div>
           <div className="featured-products-list" id="content">
@@ -72,7 +72,7 @@ const FeaturedProducts = () => {
           </div>
           <div className="right-box">
             <button id="btn-right-arrow" onClick={handleRightClick}>
-              Right
+              <span className="material-symbols-outlined">arrow_forward_ios</span>
             </button>
           </div>
         </div>
