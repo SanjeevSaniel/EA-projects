@@ -10,6 +10,10 @@ const BestSellers = () => {
   const [fullProducts, setFullProducts] = useState(data);
   const [products, setProducts] = useState(data);
   const [alignment, setAlignment] = useState("all");
+  const [visible, setVisible] = useState(4);
+
+  console.log("Loaded Items", visible);
+  console.log("Total Number of Items", data.length);
 
   useEffect(() => {
     setFullProducts(data);
@@ -31,11 +35,16 @@ const BestSellers = () => {
     console.log(filteredProducts);
   };
 
+  const showMoreArticles = () => {
+    setVisible((previousValue) => previousValue + 4);
+  };
+
   return (
     <div>
       <h2>BEST SELLERS</h2>
       <nav className="category-filters">
         <ToggleButtonGroup
+          className="toggle-group"
           color="primary"
           value={alignment}
           exclusive
@@ -48,10 +57,11 @@ const BestSellers = () => {
           <ToggleButton value="ipad">iPad</ToggleButton>
           <ToggleButton value="watch">Watch</ToggleButton>
           <ToggleButton value="accessories">Accessories</ToggleButton>
+          <ToggleButton value="others">Others</ToggleButton>
         </ToggleButtonGroup>
       </nav>
       <div className="products-container">
-        {products.map((product, index) => {
+        {products.slice(0, visible).map((product, index) => {
           return (
             <div key={index} className="product-card">
               {product.demand.toLowerCase() === "high" ? (
@@ -93,6 +103,19 @@ const BestSellers = () => {
             </div>
           );
         })}
+      </div>
+      <div className="load-more">
+        {visible >= products.length ? (
+          " "
+        ) : (
+          <button className="load-more-btn" onClick={showMoreArticles}>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/2267/2267918.png"
+              alt=""
+            />
+            Load More
+          </button>
+        )}
       </div>
     </div>
   );

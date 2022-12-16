@@ -5,6 +5,10 @@
   flex-flow: row wrap;
 }
 
+.toggle-group {
+  box-shadow: 0 0 10px 2px rgb(236, 215, 215);
+}
+
 .btn-filter {
   text-shadow: none;
 }
@@ -64,4 +68,36 @@
   /* margin: 0 10px; */
   color: rgb(165, 163, 163);
   text-decoration: line-through;
+}
+
+.load-more {
+  display: flex;
+  justify-content: center;
+}
+
+.load-more-btn {
+  display: flex;
+  align-items: center;
+  margin: 2rem 3rem 4rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(208, 205, 205);
+  border-radius: 5px;
+  color: grey;
+  background: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  width: fit-content;
+}
+
+.load-more-btn img {
+  margin: 0 0.5rem;
+  width: 20px;
+  height: 20px;
+}
+
+.load-more-btn:hover {
+  /* background-color: antiquewhite; */
+  box-shadow: 0 0 10px 5px #f7dcdc;
 }
