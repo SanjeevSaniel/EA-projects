@@ -1,0 +1,67 @@
+.products-container {
+  display: flex;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.btn-filter {
+  text-shadow: none;
+}
+
+.product-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  padding: 1.3rem 1rem;
+  width: 14rem;
+  height: 18rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 1px rgb(238, 237, 237);
+  margin: 1.5rem;
+  box-sizing: border-box;
+}
+
+.product-demand-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #ffffff;
+  background: #df1818;
+  padding: 1px 5px;
+  font-size: 0.7rem;
+}
+
+.product-image {
+  width: 10rem;
+  height: 10rem;
+}
+
+.product-prices-and-rating {
+  position: absolute;
+  bottom: 5px;
+}
+
+.product-prices {
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
+  bottom: 10px; */
+}
+
+.new-cost,
+.old-cost {
+  margin: 0 3px;
+}
+
+.new-cost {
+  color: #da5e65;
+  font-weight: 600;
+}
+
+.old-cost {
+  /* margin: 0 10px; */
+  color: rgb(165, 163, 163);
+  text-decoration: line-through;
+}

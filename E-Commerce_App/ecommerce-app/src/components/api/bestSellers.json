@@ -1,0 +1,52 @@
+[
+    {
+        "_id": 1,
+        "name": "Apple Macbook Pro 13-inch",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202206?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664497359481",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 120000,
+        "oldPrice": 125000,
+        "category": "Mac"
+    },
+    {
+        "_id": 2,
+        "name": "Apple iPhone 14 Pro",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/31Vle5fVdaL._SY445_SX342_QL70_FMwebp_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 140000,
+        "oldPrice": 145000,
+        "category": "iPhone"
+    },
+    {
+        "_id": 3,
+        "name": "Apple iPhone 13 Pro",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61jLiCovxVL._SL1500_.jpg",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 110000,
+        "oldPrice": 112000,
+        "category": "iPhone"
+    },
+    {
+        "_id": 4,
+        "name": "Apple iWatch SE (GPS, 44mm)",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/712wRLMlBeL._SL1500_.jpg",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 110000,
+        "oldPrice": 112000,
+        "category": "Watch"
+    },
+    {
+        "_id": 5,
+        "name": "Apple MacBook Air M!",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 86990,
+        "oldPrice": 99900,
+        "category": "Mac"
+    }
+]

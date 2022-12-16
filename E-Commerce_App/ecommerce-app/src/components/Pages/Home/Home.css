@@ -5,16 +5,6 @@
   max-height: fit-content;
 }
 
-/* .banner-title {
-  position: absolute;
-  top: 35%;
-  left: 31%;
-  z-index: 2;
-  font-size: 100px;
-  color: aliceblue;
-  width: fit-content;
-} */
-
 #banner-video {
   max-width: 80rem;
   max-height: 40rem;
@@ -22,11 +12,15 @@
   border-radius: 10px;
   z-index: 1;
   visibility: hidden;
-  /* transition: all 1s linear; */
 }
 
 .hr-one {
   color: rgb(156, 161, 159);
+}
+
+.best-sellers {
+  margin: 2rem auto;
+  max-width: 80rem;
 }
 
 .product-overview {

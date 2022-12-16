@@ -1,4 +1,5 @@
 import React from "react";
+import BestSellers from "../../Utilities/BestSellers/BestSellers";
 import FeaturedProducts from "../../Utilities/FeaturedProducts/FeaturedProducts";
 import ProductShowcase from "../../Utilities/ProductShowcase/ProductShowcase";
 import Services from "../../Utilities/Services/Services";
@@ -18,6 +19,9 @@ const Home = () => {
     <React.Fragment>
       <div className="banner">
         <video id="banner-video" src={BannerVideo} loop muted></video>
+      </div>
+      <div className="best-sellers">
+        <BestSellers />
       </div>
       <div className="product-overview">
         <ProductShowcase />
