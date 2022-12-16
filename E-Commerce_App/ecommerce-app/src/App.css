@@ -76,16 +76,6 @@
   color: #61dafb;
 }
 
-.app-footer {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    260deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(213, 81, 155, 1) 88%
-  );
-  border-radius: 10% 100% 96% 100% / 0% 78% 62% 46%;
-}
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

@@ -2,10 +2,15 @@ import React from "react";
 import ColorToggleButton from "../../Utilities/ColorToggleButton/ColorToggleButton";
 import RangeSlider from "../../Utilities/Slider/Slider";
 import "./Store.css";
+import ProductShowcase from "./../../Utilities/ProductShowcase/ProductShowcase";
 
 const Store = () => {
   return (
     <div className="store__container">
+      <div className="product-banner">
+        <ProductShowcase />
+      </div>
+
       <aside className="store__accessories__container">
         <div className="store__accessories__items">
           <ul className="store__accessories__list">
@@ -51,7 +56,8 @@ const Store = () => {
           <ColorToggleButton />
         </div>
       </aside>
-      <main></main>
+
+      <main className="store__main__container"></main>
     </div>
   );
 };

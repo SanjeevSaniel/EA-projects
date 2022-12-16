@@ -35,3 +35,9 @@
 .about-socials {
   margin: 1rem 1rem 1rem 0;
 }
+
+@media screen and (max-width: 1000px) {
+  .about-container {
+    grid-template-columns: auto;
+  }
+}

@@ -2,7 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  margin: 10rem 0 5rem;
+  max-width: 100%;
+  /* margin: 10rem 0 5rem; */
   background: rgb(12, 6, 51);
   background: linear-gradient(
     180deg,
@@ -65,4 +66,30 @@
   bottom: 0;
   max-width: auto;
   height: 35rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .ProductShowcase-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.7fr 0.5fr;
+    box-sizing: border-box;
+  }
+
+  .box-ProductShowcase-two {
+    grid-row: 1 / 2;
+  }
+
+  .box-ProductShowcase-two img {
+    max-height: 30rem;
+  }
+
+  .box-ProductShowcase-one {
+    grid-row: 2 / 3;
+    padding: 0;
+  }
+
+  .box-ProductShowcase-one > div {
+    margin: 0 5rem;
+    box-sizing: border-box;
+  }
 }

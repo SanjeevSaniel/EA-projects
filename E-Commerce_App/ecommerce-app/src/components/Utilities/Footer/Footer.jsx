@@ -1,10 +1,11 @@
 import React from "react";
+import PaymentGateways from "../PaymentGateways/PaymentGateways";
 import "./Footer.css";
-import Rupay from "./images/rupay.png";
-import Visa from "./images/visa.png";
-import MasterCard from "./images/mastercard.png";
-import Paypal from "./images/paypal.png";
-import Amex from "./images/amex.png";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import Typography from "@mui/material/Typography";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const Footer = () => {
   return (
@@ -65,26 +66,135 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      {/* <hr className="hr-one" /> */}
-      <div className="payment-gateways">
-        <img className="payment-logo payment-logo-five" src={Amex} alt="Amex" />
-        <img
-          className="payment-logo payment-logo-four"
-          src={Paypal}
-          alt="Paypal"
-        />
-        <img
-          className="payment-logo payment-logo-three"
-          src={MasterCard}
-          alt="Mastercard"
-        />
-        <img className="payment-logo payment-logo-two" src={Visa} alt="Visa" />
-        <img
-          className="payment-logo payment-logo-one"
-          src={Rupay}
-          alt="Rupay"
-        />
+
+      <div className="footer__container__mobile">
+        <Accordion
+          sx={{
+            backgroundColor: "rgba(250, 246, 245, 0.05)",
+          }}
+        >
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel1a-content"
+            id="panel1a-header"
+          >
+            <Typography>Information</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: "rgba(250, 246, 245, .05)" }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>Service</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: "rgba(250, 246, 245, .05)" }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>Extras</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: "rgba(250, 246, 245, .05)" }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography> My Account</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: "rgba(250, 246, 245, .05)" }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>Useful Links</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
+
+        <Accordion sx={{ backgroundColor: "rgba(250, 246, 245, .05)" }}>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="panel2a-content"
+            id="panel2a-header"
+          >
+            <Typography>Our Offers</Typography>
+          </AccordionSummary>
+          <AccordionDetails>
+            <div className="box-footer-items">
+              <ul>
+                <li>About Us</li>
+                <li>Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+              </ul>
+            </div>
+          </AccordionDetails>
+        </Accordion>
       </div>
+
+      {/* <hr className="hr-one" /> */}
+      <PaymentGateways />
     </section>
   );
 };

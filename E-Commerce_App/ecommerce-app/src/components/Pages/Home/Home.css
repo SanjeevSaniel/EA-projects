@@ -28,3 +28,18 @@
 .hr-one {
   color: rgb(156, 161, 159);
 }
+
+.product-overview {
+  position: relative;
+  margin: 7rem auto;
+  max-width: 90rem;
+  height: 30rem;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  #banner-video {
+    max-width: 28rem;
+    margin: 2rem 1rem 12rem;
+  }
+}

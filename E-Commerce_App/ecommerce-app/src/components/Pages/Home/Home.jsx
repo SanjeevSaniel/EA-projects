@@ -19,7 +19,9 @@ const Home = () => {
       <div className="banner">
         <video id="banner-video" src={BannerVideo} loop muted></video>
       </div>
-      <ProductShowcase />
+      <div className="product-overview">
+        <ProductShowcase />
+      </div>
       <Services />
       <FeaturedProducts />
     </React.Fragment>

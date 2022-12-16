@@ -20,6 +20,7 @@
 
 .box-footer-items ul {
   padding: 0;
+  list-style-type: none;
 }
 
 .box-footer-items p {
@@ -27,30 +28,22 @@
   font-weight: 600;
 }
 
+.footer__container__mobile {
+  display: none;
+}
+
 .hr-one {
   height: 2px;
   color: rgb(156, 161, 159);
 }
 
-.payment-gateways {
-  text-align: right;
-  margin: 0 2rem;
-}
+@media screen and (max-width: 900px) {
+  .footer-container {
+    display: none;
+  }
 
-.payment-logo {
-  margin: 0 0.4rem;
-}
-
-.payment-logo-one {
-  width: auto;
-  height: 18px;
-}
-
-.payment-logo-three {
-  width: auto;
-  height: 32px;
-}
-
-.payment-logo-five {
-  height: 30px;
+  .footer__container__mobile {
+    display: block;
+    margin: 0 2rem;
+  }
 }

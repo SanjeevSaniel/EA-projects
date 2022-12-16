@@ -56,3 +56,10 @@
   color: rgb(165, 163, 163);
   text-decoration: line-through;
 }
+
+@media screen and (max-width: 1000px) {
+  .featured-products-list {
+    flex-flow: column;
+    margin: 0 5rem;
+  }
+}

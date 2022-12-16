@@ -26,3 +26,10 @@
 .service-box p {
   font-size: 13px;
 }
+
+@media screen and (max-width: 1000px) {
+  .services-container {
+    grid-template-columns: auto;
+    margin: 2rem auto;
+  }
+}

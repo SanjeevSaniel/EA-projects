@@ -1,0 +1,29 @@
+.payment-gateways {
+  text-align: right;
+  margin: 0 2rem;
+}
+
+.payment-logo {
+  margin: 0 0.4rem;
+}
+
+.payment-logo-one {
+  max-width: auto;
+  max-height: 18px;
+}
+
+.payment-logo-three {
+  max-width: auto;
+  max-height: 32px;
+}
+
+.payment-logo-five {
+  max-height: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .payment-gateways {
+    margin: 2rem 0;
+    text-align: center;
+  }
+}
