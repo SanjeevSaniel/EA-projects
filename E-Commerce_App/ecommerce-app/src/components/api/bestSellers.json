@@ -41,7 +41,7 @@
     },
     {
         "_id": 5,
-        "name": "Apple MacBook Air M!",
+        "name": "Apple MacBook Air M1",
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661",
         "demand": "high",
         "rating": 4.5,
@@ -88,5 +88,35 @@
         "newPrice": 81900,
         "oldPrice": 90500,
         "category": "iPad"
+    },
+    {
+        "_id": 10,
+        "name": "Apple MacBook Air M2",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/710TJuHTMhL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 119900.00,
+        "oldPrice": 125900.00,
+        "category": "Mac"
+    },
+    {
+        "_id": 11,
+        "name": "Apple MacBook Pro 14-inch",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61Y30DpqRVL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 194900.00,
+        "oldPrice": 214900.00,
+        "category": "Mac"
+    },
+    {
+        "_id": 12,
+        "name": "Apple MacBook Pro 16-inch",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61aUBxqc5PL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 309490,
+        "oldPrice": 319490,
+        "category": "Mac"
     }
 ]
