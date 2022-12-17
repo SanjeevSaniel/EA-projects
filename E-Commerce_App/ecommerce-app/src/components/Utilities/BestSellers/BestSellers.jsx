@@ -96,7 +96,7 @@ const BestSellers = () => {
               />
               <p className="product-name">{product.name}</p>
               <div className="product-prices-and-rating">
-                <Stack className="product-rating" spacing={1}>
+                <Stack className="best-product-rating" spacing={1}>
                   <Rating
                     name="half-rating-read"
                     // defaultValue={2.5}
@@ -105,7 +105,7 @@ const BestSellers = () => {
                     readOnly
                   />
                 </Stack>
-                <div className="product-prices">
+                <div className="best-product-prices">
                   <span className="new-cost">
                     <span>{currency}</span>
                     {currency === "$"

@@ -61,16 +61,23 @@
   height: 10rem;
 }
 
+/* Product Prices and Ratings */
+
 .product-prices-and-rating {
+  display: flex;
+  justify-content: center;
   position: absolute;
   bottom: 60px;
 }
 
-.product-prices {
-  display: flex;
-  justify-content: center;
-  /* position: absolute;
-  bottom: 10px; */
+.best-product-rating {
+  position: absolute;
+  bottom: 40px;
+}
+
+.best-product-prices {
+  position: absolute;
+  bottom: 10px;
 }
 
 .new-cost,
