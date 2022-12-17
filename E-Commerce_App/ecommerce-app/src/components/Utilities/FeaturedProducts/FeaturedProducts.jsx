@@ -66,14 +66,14 @@ const FeaturedProducts = () => {
                         <span className="new-cost">
                           <span>{currency}</span>
                           {currency === "$"
-                            ? product.newPrice / 80
-                            : product.newPrice}
+                            ? Math.round(product.newPrice / 80)
+                            : Math.round(product.newPrice)}
                         </span>
                         <span className="old-cost">
                           <span>{currency}</span>
                           {currency === "$"
-                            ? product.oldPrice / 80
-                            : product.oldPrice}
+                            ? Math.round(product.oldPrice / 80)
+                            : Math.round(product.oldPrice)}
                         </span>
                       </div>
                     </div>
