@@ -1,11 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 // import ReactStars from "react-stars";
 import "./FeaturedProducts.css";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
+import { CurrencyContext } from "../../Pages/LandingPage/LandingPage";
 // import AirPodsMax from "./images/airpods-max-select-green-202011.png";
 
 const FeaturedProducts = () => {
+  const [currency] = useContext(CurrencyContext);
   const data = require("../../api/FeaturedProducts.json");
   const [products, setProducts] = useState([]);
 
@@ -61,8 +63,18 @@ const FeaturedProducts = () => {
                         />
                       </Stack>
                       <div>
-                        <span className="new-cost">₹ {product.newPrice}</span>
-                        <span className="old-cost">₹ {product.oldPrice}</span>
+                        <span className="new-cost">
+                          <span>{currency}</span>
+                          {currency === "$"
+                            ? product.newPrice / 80
+                            : product.newPrice}
+                        </span>
+                        <span className="old-cost">
+                          <span>{currency}</span>
+                          {currency === "$"
+                            ? product.oldPrice / 80
+                            : product.oldPrice}
+                        </span>
                       </div>
                     </div>
                   </div>
@@ -72,7 +84,9 @@ const FeaturedProducts = () => {
           </div>
           <div className="right-box">
             <button id="btn-right-arrow" onClick={handleRightClick}>
-              <span className="material-symbols-outlined">arrow_forward_ios</span>
+              <span className="material-symbols-outlined">
+                arrow_forward_ios
+              </span>
             </button>
           </div>
         </div>

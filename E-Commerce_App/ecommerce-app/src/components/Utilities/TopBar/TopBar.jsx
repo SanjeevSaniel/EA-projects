@@ -5,12 +5,12 @@ import ShoppingCart from "../ShoppingCart/ShoppingCart";
 import UserProfile from "../UserProfile/UserProfile";
 import "./TopBar.css";
 
-const TopBar = () => {
+const TopBar = ({ languages, currencies }) => {
   return (
     <div className="topbar">
       <div className="selectables">
-        <Dropdown id="language" options={["EN", "IN"]} />
-        <Dropdown id="currency" options={["$", "₹"]} />
+        <Dropdown id="language" options={languages} />
+        <Dropdown id="currency" options={currencies} />
       </div>
       <div className="actionables">
         <UserProfile />

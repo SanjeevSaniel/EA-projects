@@ -27,6 +27,12 @@
   box-sizing: border-box;
 }
 
+.product-card:hover {
+  box-shadow: 0 0 15px 5px rgb(219, 216, 216);
+  transition: all 0.3s linear 0.1s;
+  cursor: pointer;
+}
+
 .product-demand-label {
   position: absolute;
   top: 10px;
