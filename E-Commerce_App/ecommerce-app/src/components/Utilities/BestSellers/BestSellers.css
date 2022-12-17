@@ -24,7 +24,7 @@
   flex-flow: column;
   padding: 1.3rem 1rem;
   width: 14rem;
-  height: 18rem;
+  height: 22rem;
   border-radius: 5px;
   box-shadow: 0 0 5px 1px rgb(238, 237, 237);
   margin: 1.5rem;
@@ -35,6 +35,15 @@
   box-shadow: 0 0 15px 5px rgb(219, 216, 216);
   transition: all 0.3s linear 0.1s;
   cursor: pointer;
+}
+
+.btn-to-cart {
+  position: absolute;
+  bottom: 10px;
+  background: transparent;
+  backdrop-filter: blur(100px);
+  /* z-index: -1; */
+  /* visibility: hidden; */
 }
 
 .product-demand-label {
@@ -54,7 +63,7 @@
 
 .product-prices-and-rating {
   position: absolute;
-  bottom: 5px;
+  bottom: 60px;
 }
 
 .product-prices {
@@ -99,6 +108,7 @@
   cursor: pointer;
   transition: all 0.5s;
   width: fit-content;
+  z-index: 2;
 }
 
 .load-more-btn img {

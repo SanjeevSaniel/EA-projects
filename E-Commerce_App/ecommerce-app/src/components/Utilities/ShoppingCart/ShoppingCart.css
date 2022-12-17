@@ -11,6 +11,30 @@
   margin-right: 6px;
 }
 
+.btn-cart {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.count-bubble {
+  position: absolute;
+  top: 0;
+  left: 35px;
+  width: 18px;
+  height: 18px;
+  /* padding-top: 1px; */
+  font-size: 12px;
+  background: red;
+  border-radius: 100%;
+}
+
+.hide {
+  display: none;
+  background: none;
+  color: black;
+}
+
 .cart-link {
   text-decoration: none;
 }

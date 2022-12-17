@@ -8,10 +8,12 @@ import {
   CurrencyContext,
   LanguageContext,
 } from "../../Pages/LandingPage/LandingPage";
+import AddToCart from "../AddToCart/AddToCart";
 
 const BestSellers = () => {
   const [currency] = useContext(CurrencyContext);
   const [language] = useContext(LanguageContext);
+
   const data = require("../../api/bestSellers.json");
   const [fullProducts, setFullProducts] = useState(data);
   const [products, setProducts] = useState(data);
@@ -117,6 +119,9 @@ const BestSellers = () => {
                       : product.oldPrice}
                   </span>
                 </div>
+              </div>
+              <div id={`btn-cart-collect-${index}`} className="btn-to-cart">
+                {<AddToCart />}
               </div>
             </div>
           );

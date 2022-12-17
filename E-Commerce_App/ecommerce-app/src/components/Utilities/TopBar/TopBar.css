@@ -4,6 +4,12 @@
   align-items: center;
   background-color: rgb(154, 105, 105);
   /* padding: .2px 0; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 5;
+  box-shadow: 5px 0 10px 2px rgb(94, 93, 93);
 }
 
 .selectables {
@@ -15,6 +21,6 @@
 .actionables {
   display: flex;
   justify-content: space-around;
-  width: 20rem;
+  max-width: fit-content;
   max-height: max-content;
 }
