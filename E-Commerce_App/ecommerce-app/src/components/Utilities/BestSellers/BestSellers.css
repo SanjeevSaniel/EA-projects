@@ -1,3 +1,7 @@
+.best-sellers-heading {
+  margin-bottom: 1.5rem;
+}
+
 .products-container {
   display: flex;
   /* justify-content: space-between; */

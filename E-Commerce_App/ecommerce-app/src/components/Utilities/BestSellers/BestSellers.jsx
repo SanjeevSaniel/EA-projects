@@ -49,7 +49,7 @@ const BestSellers = () => {
 
   return (
     <div>
-      <h2>BEST SELLERS</h2>
+      <h2 className="best-sellers-heading">BEST SELLERS</h2>
       <nav className="category-filters">
         <ToggleButtonGroup
           className="toggle-group"
