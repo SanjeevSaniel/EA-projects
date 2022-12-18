@@ -19,6 +19,7 @@
   background: var(--background);
   transform: scale(var(--scale, 1));
   transition: transform 0.4s cubic-bezier(0.36, 1.01, 0.32, 1.27);
+  z-index: 1;
 }
 .btn--add-cart:active {
   --scale: 0.95;

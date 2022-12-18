@@ -115,8 +115,9 @@ const Store = () => {
                 justifyContent: "flex-start",
               }}
             >
+              {/* Store Products filter */}
               <Box sx={{ width: 100, marginX: 5 }}>
-                <FormControl size="small" fullWidth>
+                <FormControl size="small" fullWidth disabled>
                   <InputLabel id="simple-select-label-sort">Sort By</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -131,6 +132,7 @@ const Store = () => {
                 </FormControl>
               </Box>
 
+              {/* Store No of products to display */}
               <Box sx={{ width: 100, marginX: 5 }}>
                 <FormControl size="small" fullWidth>
                   <InputLabel id="simple-select-label-items">Show</InputLabel>

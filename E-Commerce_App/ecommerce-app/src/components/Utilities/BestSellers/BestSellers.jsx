@@ -54,7 +54,7 @@ const BestSellers = () => {
       <h2 className="best-sellers-heading">BEST SELLERS</h2>
       <nav className="category-filters">
         <ToggleButtonGroup
-          className="toggle-group"
+          id="toggle-group"
           color="primary"
           value={alignment}
           exclusive

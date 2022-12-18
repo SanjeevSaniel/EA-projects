@@ -9,7 +9,7 @@
   flex-flow: row wrap;
 }
 
-.toggle-group {
+#toggle-group {
   box-shadow: 0 0 10px 2px rgb(236, 215, 215);
 }
 
