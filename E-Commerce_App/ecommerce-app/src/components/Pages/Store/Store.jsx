@@ -1,7 +1,8 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ColorToggleButton from "../../Utilities/ColorToggleButton/ColorToggleButton";
 import RangeSlider from "../../Utilities/Slider/Slider";
 import "./Store.css";
+
 import ProductShowcase from "./../../Utilities/ProductShowcase/ProductShowcase";
 
 import Box from "@mui/material/Box";
@@ -23,7 +24,15 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 
+import Pagination from "@mui/material/Pagination";
+
 const Store = () => {
+  const apiData = require("../../api/Store.json");
+
+  const [products, setProducts] = useState(apiData);
+  const count = [...products].length;
+  console.log(products);
+
   const [currency] = useContext(CurrencyContext);
 
   const [sort, setSort] = useState("name");
@@ -46,6 +55,10 @@ const Store = () => {
   const handleFlexFlow = (flow) => {
     setFlexFlow(flow);
   };
+
+  useEffect(() => {
+    setProducts(apiData);
+  }, [apiData]);
 
   return (
     <div className="store__container">
@@ -134,7 +147,7 @@ const Store = () => {
 
               {/* Store No of products to display */}
               <Box sx={{ width: 100, marginX: 5 }}>
-                <FormControl size="small" fullWidth>
+                <FormControl size="small" fullWidth disabled>
                   <InputLabel id="simple-select-label-items">Show</InputLabel>
                   <Select
                     labelId="demo-simple-select-label"
@@ -178,13 +191,25 @@ const Store = () => {
             </Card>
           </Card>
 
+          <Stack
+            sx={{
+              display: "flex",
+              alignItems: "center",
+            }}
+            spacing={2}
+            marginTop={3}
+            marginBottom={2}
+          >
+            <Pagination count={Math.ceil(count / 12)} color="primary" />
+          </Stack>
+
           <Box sx={{ flexGrow: 1 }}>
             <Grid
               container
               spacing={{ xs: 2, md: 3 }}
               columns={{ xs: 4, sm: 8, md: `${layout}` }}
             >
-              {Array.from(Array(itemsCount)).map((_, index) => (
+              {products.map((product, index) => (
                 <Grid xs={2} sm={3} md={4} key={index}>
                   <Card
                     variant="outlined"
@@ -194,10 +219,6 @@ const Store = () => {
                   >
                     <CardContent
                       sx={{
-                        // display: "grid",
-                        // justifyItems: "center",
-                        // columnCount: 3,
-                        // gridRow: 1
                         display: "flex",
                         flexFlow: `${flexFlow}`,
                         justifyContent: "space-between",
@@ -215,7 +236,7 @@ const Store = () => {
                         variant="subtitle1"
                         gutterBottom
                       >
-                        subtitle1. Lorem ipsum dolor sit amet, consectetur
+                        {product.name}
                       </Typography>
                       <Card variant="none">
                         <Stack spacing={1}>
