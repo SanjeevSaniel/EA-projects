@@ -1,0 +1,88 @@
+.store__container {
+  max-width: 80rem;
+  margin: 2rem auto 5rem;
+}
+
+.iphone__container__section {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  max-width: 85rem;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+/* .store__accessories__container {
+  max-width: 15rem;
+}
+
+.store__sidebar__headings {
+  margin: 0.5rem 0 1rem;
+}
+
+.store__accessories__items,
+.store__accessories__prices,
+.store__accessorries__colors {
+  background: #eef1f0;
+  margin: 0.5rem 0 1rem;
+}
+
+.store__accessories__list,
+.store__accessories__prices,
+.store__accessorries__colors {
+  padding: 1rem;
+}
+
+.store__accessories__item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+} */
+
+.iphone__main__container {
+  max-width: 100%;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.product-banner {
+  /* margin: 0 2r; */
+  padding: 0 0 2rem;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+  /* max-width: fit-content; */
+  box-sizing: border-box;
+}
+
+/* Products */
+.product-prices {
+  position: relative;
+  bottom: 60px;
+}
+
+.product-prices {
+  display: flex;
+  justify-content: center;
+  /* position: absolute;
+  bottom: 10px; */
+}
+
+.new-cost,
+.old-cost {
+  margin: 0 3px;
+}
+
+.new-cost {
+  color: #da5e65;
+  font-weight: 600;
+}
+
+.old-cost {
+  /* margin: 0 10px; */
+  color: rgb(165, 163, 163);
+  text-decoration: line-through;
+}

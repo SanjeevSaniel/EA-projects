@@ -3,10 +3,10 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./../Navbar/Navbar";
 import Home from "./../../Pages/Home/Home";
 import Store from "./../../Pages/Store/Store";
-import IPhone from "./../../Pages/iPhone";
-import IPad from "./../../Pages/iPad";
-import Macbook from "./../../Pages/Macbook";
-import Accessories from "./../../Pages/Accessories";
+import IPhone from "../../Pages/IPhone/IPhone";
+import IPad from "../../Pages/IPad/iPad";
+import Macbook from "../../Pages/Macbook/Macbook";
+import Accessories from "../../Pages/Accessories/Accessories";
 import Error from "./../../Pages/Error/Error";
 import Cart from "./../Cart/Cart";
 
