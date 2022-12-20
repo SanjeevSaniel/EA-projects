@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import React, { useEffect, createContext, useState } from "react";
 import TopBar from "./../../Utilities/TopBar/TopBar";
 import Greeting from "./../../Utilities/Greeting/Greeting";
 import Routers from "./../../Utilities/Routers/Routers";
@@ -15,8 +15,21 @@ const LandingPage = () => {
   const currencies = ["₹", "$"];
 
   const [language, setLanguage] = useState("EN");
-  const [currency, setCurrency] = useState("$");
+  const [currency, setCurrency] = useState("₹");
   const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    let c = localStorage.getItem("Currency");
+    if (c) {
+      setCurrency(JSON.parse(c));
+    }
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("Currency", JSON.stringify(currency));
+  }, [currency]);
+
+  // localStorage.getItem(currency);
 
   return (
     <div>

@@ -30,13 +30,16 @@ const Store = () => {
   const apiData = require("../../api/Store.json");
 
   const [products, setProducts] = useState(apiData);
-  const count = [...products].length;
+  const itemsCount = [...products].length;
   console.log(products);
 
   const [currency] = useContext(CurrencyContext);
 
   const [sort, setSort] = useState("name");
-  const [itemsCount, setItemsCount] = useState(12);
+  const [pageSize, setPageSize] = useState(12);
+
+  const pagesCount = Math.ceil(itemsCount / pageSize);
+
   const [layout, setLayout] = useState(12);
   const [flexFlow, setFlexFlow] = useState("column");
 
@@ -45,7 +48,7 @@ const Store = () => {
   };
 
   const handleChangeCount = (event) => {
-    setItemsCount(event.target.value);
+    setPageSize(event.target.value);
   };
 
   const handleLayout = (num) => {
@@ -54,6 +57,10 @@ const Store = () => {
 
   const handleFlexFlow = (flow) => {
     setFlexFlow(flow);
+  };
+
+  const handlePageChange = (event) => {
+    console.log("Page: ", event.target.value);
   };
 
   useEffect(() => {
@@ -152,7 +159,7 @@ const Store = () => {
                   <Select
                     labelId="demo-simple-select-label"
                     id="simple-select-items"
-                    value={itemsCount}
+                    value={pageSize}
                     label="Sort By"
                     onChange={handleChangeCount}
                   >
@@ -200,7 +207,11 @@ const Store = () => {
             marginTop={3}
             marginBottom={2}
           >
-            <Pagination count={Math.ceil(count / 12)} color="primary" />
+            <Pagination
+              onPageChange={handlePageChange}
+              count={pagesCount}
+              color="primary"
+            />
           </Stack>
 
           <Box sx={{ flexGrow: 1 }}>
@@ -225,11 +236,7 @@ const Store = () => {
                         alignItems: "center",
                       }}
                     >
-                      <img
-                        width={150}
-                        src="https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61aUBxqc5PL._SL1500_.jpg"
-                        alt=""
-                      />
+                      <img width={150} src={product.image} alt="" />
                       <Typography
                         textAlign={"center"}
                         // padding={1}
@@ -255,11 +262,15 @@ const Store = () => {
                         >
                           <span className="new-cost">
                             <span>{currency}</span>
-                            {currency === "$" ? 800 / 80 : 80}
+                            {currency === "$"
+                              ? Math.ceil(product.newPrice / 80)
+                              : product.newPrice}
                           </span>
                           <span className="old-cost">
                             <span>{currency}</span>
-                            {currency === "$" ? 80 / 80 : 80}
+                            {currency === "$"
+                              ? Math.ceil(product.oldPrice / 80)
+                              : product.oldPrice}
                           </span>
                         </Typography>
                       </Card>

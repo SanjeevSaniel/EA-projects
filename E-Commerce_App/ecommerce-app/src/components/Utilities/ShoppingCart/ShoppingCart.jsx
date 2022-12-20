@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
-import { CartCountContext } from "../../Pages/LandingPage/LandingPage";
+
 import "./ShoppingCart.css";
 
 const ShoppingCart = () => {
-  const cartCount = useContext(CartCountContext);
+  // const cartCount = useContext(CartCountContext);
 
   return (
     <React.Fragment>
@@ -12,11 +12,11 @@ const ShoppingCart = () => {
         <div className="shopping-cart">
           <button className="btn-cart">
             <span className="material-symbols-outlined">shopping_cart</span>
-            {cartCount === 0 ? (
+            {/*{cartCount === 0 ? (
               <span className="hide count-bubble">{cartCount}</span>
             ) : (
               <span className="count-bubble">{cartCount}</span>
-            )}
+            )} */}
           </button>
         </div>
       </Link>
