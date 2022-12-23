@@ -1,50 +1,108 @@
 import * as React from "react";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import Button from "@mui/material/Button";
-import OutlinedInput from "@mui/material/OutlinedInput";
-import InputAdornment from "@mui/material/InputAdornment";
+// import Table from "@mui/material/Table";
+// import TableBody from "@mui/material/TableBody";
+// import TableCell from "@mui/material/TableCell";
+// import TableContainer from "@mui/material/TableContainer";
+// import TableHead from "@mui/material/TableHead";
+// import TableRow from "@mui/material/TableRow";
+// import Paper from "@mui/material/Paper";
+// import Button from "@mui/material/Button";
+// import OutlinedInput from "@mui/material/OutlinedInput";
+// import InputAdornment from "@mui/material/InputAdornment";
 import "./Cart.css";
+import Table from "react-bootstrap/Table";
+import Button from "react-bootstrap/Button";
 
-const TAX_RATE = 0.07;
+// const TAX_RATE = 0.07;
 
-function currencyFormat(num) {
-  return `${num.toFixed(2)}`;
-}
+// function currencyFormat(num) {
+//   return `${num.toFixed(2)}`;
+// }
 
-function priceRow(qty, unit) {
-  return qty * unit;
-}
+// function priceRow(qty, unit) {
+//   return qty * unit;
+// }
 
-function createRow(desc, qty, unit) {
-  const price = priceRow(qty, unit);
-  return { desc, qty, unit, price };
-}
+// function createRow(desc, qty, unit) {
+//   const price = priceRow(qty, unit);
+//   return { desc, qty, unit, price };
+// }
 
-function subtotal(items) {
-  return items.map(({ price }) => price).reduce((sum, i) => sum + i, 0);
-}
+// function subtotal(items) {
+//   return items.map(({ price }) => price).reduce((sum, i) => sum + i, 0);
+// }
 
-const rows = [
-  createRow("Paperclips (Box)", 100, 1.15),
-  createRow("Paper (Case)", 10, 45.99),
-  createRow("Waste Basket", 2, 17.99),
-];
+// const rows = [
+//   createRow("Paperclips (Box)", 100, 1.15),
+//   createRow("Paper (Case)", 10, 45.99),
+//   createRow("Waste Basket", 2, 17.99),
+// ];
 
-const invoiceSubtotal = subtotal(rows);
-const invoiceTaxes = TAX_RATE * invoiceSubtotal;
-const invoiceTotal = invoiceTaxes + invoiceSubtotal;
+// const invoiceSubtotal = subtotal(rows);
+// const invoiceTaxes = TAX_RATE * invoiceSubtotal;
+// const invoiceTotal = invoiceTaxes + invoiceSubtotal;
 
 const Cart = () => {
+  const products = require("../../api/bestSellers.json");
+
   return (
     <div className="cart__container">
       <h6 className="cart__container__title">Cart</h6>
-      <TableContainer component={Paper}>
+
+      <section className="container-grid">
+        <Table>
+          <thead>
+            <tr>
+              <th></th>
+              <th colSpan={2}>Product</th>
+              <th>Quantity</th>
+              <th>Unit Price</th>
+              <th>Price</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            {products.map((product, index) => (
+              <tr key={product._id}>
+                <td>{index + 1}</td>
+                <td>
+                  <img
+                    style={{ width: "4rem", height: "4rem" }}
+                    src={product.image}
+                    alt=""
+                  />
+                </td>
+                <td style={{ textAlign: "left" }}>{product.name}</td>
+                <td>{2}</td>
+                <td>{product.newPrice}</td>
+                <td>{product.newPrice * 2}</td>
+                <td>
+                  <Button variant="outline-danger" size="sm">
+                    X
+                  </Button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </Table>
+
+        <aside className="cart-totals">
+          <Table>
+            <tbody>
+              <tr>
+                <td>Number Of Items</td>
+                <td>{products.length}</td>
+              </tr>
+              <tr>
+                <td>Total Cost</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </Table>
+        </aside>
+      </section>
+
+      {/*<TableContainer component={Paper}>
         <Table sx={{ minWidth: 700 }} aria-label="spanning table">
           <TableHead>
             <TableRow>
@@ -131,7 +189,7 @@ const Cart = () => {
             </TableRow>
           </TableBody>
         </Table>
-      </TableContainer>
+                </TableContainer>*/}
     </div>
   );
 };

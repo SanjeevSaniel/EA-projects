@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useContext } from "react";
-import ColorToggleButton from "../../Utilities/ColorToggleButton/ColorToggleButton";
-import RangeSlider from "../../Utilities/Slider/Slider";
+// import ColorToggleButton from "../../Utilities/ColorToggleButton/ColorToggleButton";
+// import RangeSlider from "../../Utilities/Slider/Slider";
 import "./IPhone.css";
 
-import ProductShowcase from "../../Utilities/ProductShowcase/ProductShowcase";
+// import ProductShowcase from "../../Utilities/ProductShowcase/ProductShowcase";
 
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Unstable_Grid2";

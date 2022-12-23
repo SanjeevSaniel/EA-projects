@@ -1,6 +1,7 @@
 .cart__container {
   max-width: 80rem;
   margin: 5rem auto;
+  position: relative;
 }
 
 .cart__container__title {
@@ -12,3 +13,16 @@
   box-shadow: 0 0 5px 1px rgb(246, 244, 244);
 }
 
+.container-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: auto;
+  position: relative;
+}
+
+.cart-totals {
+  position: sticky;
+  margin: 2rem;
+  border: 1px solid grey;
+  height: 200px;
+}

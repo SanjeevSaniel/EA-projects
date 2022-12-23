@@ -1,5 +1,5 @@
 import React, { useEffect, createContext, useState } from "react";
-import TopBar from "./../../Utilities/TopBar/TopBar";
+import AppBar from "../../Utilities/TopBar/TopBar";
 import Greeting from "./../../Utilities/Greeting/Greeting";
 import Routers from "./../../Utilities/Routers/Routers";
 import About from "./../../Utilities/About/About";
@@ -29,18 +29,12 @@ const LandingPage = () => {
     localStorage.setItem("Currency", JSON.stringify(currency));
   }, [currency]);
 
-  // localStorage.getItem(currency);
-
   return (
     <div>
       <LanguageContext.Provider value={[language, setLanguage]}>
         <CurrencyContext.Provider value={[currency, setCurrency]}>
           <CartCountContext.Provider value={[cartCount, setCartCount]}>
-            <TopBar
-              languages={languages}
-              currencies={currencies}
-              // handleDropdownSelection={handleDropdownSelection}
-            />
+            <AppBar languages={languages} currencies={currencies} />
             <Greeting />
             <Routers />
             <section className="app-footer">
