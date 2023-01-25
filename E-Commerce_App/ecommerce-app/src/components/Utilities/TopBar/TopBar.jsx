@@ -11,6 +11,8 @@ import { styled } from "@mui/material/styles";
 import IconButton from "@mui/material/IconButton";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 
+import { Link } from "react-router-dom";
+
 const StyledBadge = styled(Badge)(({ theme }) => ({
   "& .MuiBadge-badge": {
     right: -3,
@@ -32,14 +34,16 @@ const TopBar = ({ languages, currencies }) => {
       <div className="actionables">
         <UserProfile />
 
-        <IconButton aria-label="cart">
-          <StyledBadge badgeContent={cartCount} color="secondary">
-            <ShoppingCartIcon />
-            {/*<ShoppingCart /> */}
-          </StyledBadge>
-        </IconButton>
+        <Link to="/Cart">
+          <IconButton aria-label="cart">
+            <StyledBadge badgeContent={cartCount} color="secondary">
+              <ShoppingCartIcon />
+              {/*<ShoppingCart /> */}
+            </StyledBadge>
+          </IconButton>
+        </Link>
 
-        <Search />
+        {/* <Search /> */}
       </div>
     </div>
   );
