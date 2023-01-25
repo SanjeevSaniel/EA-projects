@@ -1,0 +1,122 @@
+[
+    {
+        "_id": 1,
+        "name": "Apple Macbook Pro 13-inch",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/mbp-spacegray-select-202206?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664497359481",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 120000,
+        "oldPrice": 125000,
+        "category": "Mac"
+    },
+    {
+        "_id": 2,
+        "name": "Apple iPhone 14 Pro",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/31Vle5fVdaL._SY445_SX342_QL70_FMwebp_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 140000,
+        "oldPrice": 145000,
+        "category": "iPhone"
+    },
+    {
+        "_id": 3,
+        "name": "Apple iPhone 13 Pro",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61jLiCovxVL._SL1500_.jpg",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 110000,
+        "oldPrice": 112000,
+        "category": "iPhone"
+    },
+    {
+        "_id": 4,
+        "name": "Apple iWatch SE (GPS, 44mm)",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/712wRLMlBeL._SL1500_.jpg",
+        "demand": "high",
+        "rating": 4,
+        "newPrice": 29900,
+        "oldPrice": 31000,
+        "category": "Watch"
+    },
+    {
+        "_id": 5,
+        "name": "Apple MacBook Air M1",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/macbook-air-space-gray-select-201810?wid=452&hei=420&fmt=jpeg&qlt=95&.v=1664472289661",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 86990,
+        "oldPrice": 99900,
+        "category": "Mac"
+    },
+    {
+        "_id": 6,
+        "name": "Apple Watch Ultra",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQDY3ref_VW_34FR+watch-49-titanium-ultra_VW_34FR_WF_CO+watch-face-49-alpine-ultra_VW_34FR_WF_CO_GEO_IN?wid=700&hei=700&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1660713659063%2C1660927566964%2C1661371890735",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 89900,
+        "oldPrice": 91900,
+        "category": "Watch"
+    },
+    {
+        "_id": 7,
+        "name": "AirPods Pro (2nd generation)",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361",
+        "demand": "high",
+        "rating": 4.5,
+        "newPrice": 26900,
+        "oldPrice": 30000,
+        "category": "Accessories"
+    },
+    {
+        "_id": 8,
+        "name": "Apple TV 4K",
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/apple-tv-4k-hero-select-202210?wid=538&hei=535&fmt=jpeg&qlt=95&.v=1664896361408",
+        "demand": "standard",
+        "rating": 3.5,
+        "newPrice": 149000,
+        "oldPrice": 151030,
+        "category": "Others"
+    },
+    {
+        "_id": 9,
+        "name": "iPad Pro 2022 11-inch",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/81S05k6p0xL._SL1500_.jpg",
+        "demand": "high",
+        "rating": 4,
+        "newPrice": 81900,
+        "oldPrice": 90500,
+        "category": "iPad"
+    },
+    {
+        "_id": 10,
+        "name": "Apple MacBook Air M2",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/710TJuHTMhL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 119900.00,
+        "oldPrice": 125900.00,
+        "category": "Mac"
+    },
+    {
+        "_id": 11,
+        "name": "Apple MacBook Pro 14-inch",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61Y30DpqRVL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 194900.00,
+        "oldPrice": 214900.00,
+        "category": "Mac"
+    },
+    {
+        "_id": 12,
+        "name": "Apple MacBook Pro 16-inch",
+        "image": "https://m.media-amazon.com/images/W/WEBP_402378-T2/images/I/61aUBxqc5PL._SL1500_.jpg",
+        "demand": "standard",
+        "rating": 4,
+        "newPrice": 309490,
+        "oldPrice": 319490,
+        "category": "Mac"
+    }
+]

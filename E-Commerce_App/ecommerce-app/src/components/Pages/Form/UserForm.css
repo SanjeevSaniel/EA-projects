@@ -1,0 +1,5 @@
+.form-card {
+  position: fixed;
+  top: 10%;
+  z-index: 5;
+}

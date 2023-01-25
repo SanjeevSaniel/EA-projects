@@ -1,0 +1,51 @@
+[
+    {
+        "_id": 1,
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-max-select-green-202011?wid=940&hei=1112&fmt=png-alpha&.v=1604022364000",
+        "name": "AirPods Max",
+        "rating": 4,
+        "newPrice": 59900,
+        "oldPrice": 65000
+    },
+    {
+        "_id": 2,
+        "image": "https://www.apple.com/v/homepod-mini/g/images/overview/hero_homepod_blue__eobtqej8h9me_large_2x.png",
+        "name": "HomePod mini",
+        "rating": 3.5,
+        "newPrice": 9900,
+        "oldPrice": 10000
+    },
+    {
+        "_id": 3,
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airtag-double-select-202104?wid=890&hei=740&fmt=jpeg&qlt=90&.v=1617761672000",
+        "name": "AirTag",
+        "rating": 3.5,
+        "newPrice": 3490,
+        "oldPrice": 5000
+    },
+    {
+        "_id": 4,
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/MQGM3ref_AV1?wid=1144&hei=1144&fmt=jpeg&qlt=90&.v=1661181596142",
+        "name": "Braided Solo Loop",
+        "rating": 3,
+        "newPrice": 9500,
+        "oldPrice": 10000
+    },
+    {
+        "_id": 5,
+        "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airtag-double-select-202104?wid=890&hei=740&fmt=jpeg&qlt=90&.v=1617761672000",
+        "name": "AirTag",
+        "rating": 3.5,
+        "newPrice": 3490,
+        "oldPrice": 5000
+    },
+    {
+        "_id": 6,
+        "image": "https://www.apple.com/v/homepod-mini/g/images/overview/hero_homepod_blue__eobtqej8h9me_large_2x.png",
+        "name": "HomePod mini",
+        "rating": 3.5,
+        "newPrice": 9900,
+        "oldPrice": 10000
+    }
+
+]
