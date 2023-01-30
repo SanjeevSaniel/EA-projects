@@ -1,9 +1,16 @@
 import React, { useContext } from "react";
+import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 import { CartCountContext } from "../../Pages/LandingPage/LandingPage";
 import "./AddToCart.css";
 
-const AddToCart = () => {
+const AddToCart = ({ addToCart }) => {
   const [cartCount, setCartCount] = useContext(CartCountContext);
+
+  const cart = useContext(CartContext);
+
+  // const addToCart = (e) => {
+  //   console.log(e.currentTarget);
+  // };
 
   const increaseCartCount = () => {
     setCartCount((prevValue) => prevValue + 1);
@@ -27,9 +34,10 @@ const AddToCart = () => {
     <div>
       <button
         className="btn--add-cart"
-        onClick={() => {
+        onClick={(e) => {
           run();
           increaseCartCount();
+          addToCart(e);
         }}
       >
         <span>Add to cart</span>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useContext } from "react";
 // import Table from "@mui/material/Table";
 // import TableBody from "@mui/material/TableBody";
 // import TableCell from "@mui/material/TableCell";
@@ -12,6 +12,7 @@ import * as React from "react";
 import "./Cart.css";
 import Table from "react-bootstrap/Table";
 import Button from "react-bootstrap/Button";
+import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 
 // const TAX_RATE = 0.07;
 
@@ -43,7 +44,16 @@ import Button from "react-bootstrap/Button";
 // const invoiceTotal = invoiceTaxes + invoiceSubtotal;
 
 const Cart = () => {
-  const products = require("../../api/bestSellers.json");
+  // const products = require("../../api/bestSellers.json");
+
+  const [cart, setCart] = useContext(CartContext);
+
+  const removeFromCart = (id) => {
+    const newCart = cart.filter((c) => c._id !== id);
+    setCart(newCart);
+    localStorage.setItem("Cart", JSON.stringify(newCart));
+    console.log(newCart);
+  };
 
   return (
     <div className="cart__container">
@@ -62,7 +72,7 @@ const Cart = () => {
             </tr>
           </thead>
           <tbody>
-            {products.map((product, index) => (
+            {cart.map((product, index) => (
               <tr key={product._id}>
                 <td>{index + 1}</td>
                 <td>
@@ -73,11 +83,15 @@ const Cart = () => {
                   />
                 </td>
                 <td style={{ textAlign: "left" }}>{product.name}</td>
-                <td>{2}</td>
+                <td>{product.quantity ? product.quantity : 0}</td>
                 <td>{product.newPrice}</td>
                 <td>{product.newPrice * 2}</td>
                 <td>
-                  <Button variant="outline-danger" size="sm">
+                  <Button
+                    variant="outline-danger"
+                    size="sm"
+                    onClick={() => removeFromCart(product._id)}
+                  >
                     X
                   </Button>
                 </td>
@@ -91,7 +105,7 @@ const Cart = () => {
             <tbody>
               <tr>
                 <td>Number Of Items</td>
-                <td>{products.length}</td>
+                <td>{cart.length}</td>
               </tr>
               <tr>
                 <td>Total Cost</td>

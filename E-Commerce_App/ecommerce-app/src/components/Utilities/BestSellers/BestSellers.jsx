@@ -5,14 +5,19 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Rating from "@mui/material/Rating";
 import Stack from "@mui/material/Stack";
 import {
+  // CartCountContext,
   CurrencyContext,
   LanguageContext,
 } from "../../Pages/LandingPage/LandingPage";
-import AddToCart from "../AddToCart/AddToCart";
+// import AddToCart from "../AddToCart/AddToCart";
+import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 
 const BestSellers = () => {
   const [currency] = useContext(CurrencyContext);
   const [language] = useContext(LanguageContext);
+
+  const [cart, setCart] = useContext(CartContext);
+  // const [cartCount, setCartCount] = useContext(CartCountContext);
 
   const data = require("../../api/bestSellers.json");
   const [fullProducts, setFullProducts] = useState(data);
@@ -25,9 +30,21 @@ const BestSellers = () => {
   console.log("Loaded Items", visible);
   console.log("Total Number of Items", data.length);
 
-  useEffect(() => {
-    setFullProducts(data);
-  }, [data]);
+  const addToCart = (id, index) => {
+    // if (cart[id]) {
+    let newItem = { ...products[id], quantity: 1 };
+
+    setCart((current) => [...current, newItem]);
+
+    // }
+    // cart.filter(
+    //   (c) =>
+    //     c._id === products[index]._id
+    //       ? (c.quantity += 1)
+    //       : setCart((current) => [...current, products[index]])
+    // : cart.push(products[index], { quantity: 1 })
+    // );
+  };
 
   const handleChange = (event, newAlignment) => {
     setAlignment(newAlignment);
@@ -48,6 +65,14 @@ const BestSellers = () => {
   const showMoreArticles = () => {
     setVisible((previousValue) => previousValue + 4);
   };
+
+  useEffect(() => {
+    setFullProducts(data);
+  }, [data]);
+
+  useEffect(() => {
+    localStorage.setItem("Cart", JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <div>
@@ -120,9 +145,17 @@ const BestSellers = () => {
                   </span>
                 </div>
               </div>
-              <div id={`btn-cart-collect-${index}`} className="btn-to-cart">
-                {<AddToCart />}
-              </div>
+              <button
+                id={`btn-cart-collect-${index}`}
+                className="btn-to-cart"
+                onClick={() => addToCart(index, product._id)}
+              >
+                Add to cart
+              </button>
+
+              {/* <div id={`btn-cart-collect-${index}`} className="btn-to-cart">
+                {<AddToCart addToCart={addToCart} />}
+              </div> */}
             </div>
           );
         })}

@@ -40,7 +40,10 @@
 .btn-to-cart {
   position: absolute;
   bottom: 10px;
-  background: transparent;
+  color: #ffffff;
+  border: none;
+  /* background: transparent; */
+  background: #936b6a;
   backdrop-filter: blur(100px);
   /* z-index: -1; */
   /* visibility: hidden; */

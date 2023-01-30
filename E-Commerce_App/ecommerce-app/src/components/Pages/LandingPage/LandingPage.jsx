@@ -8,6 +8,8 @@ import "./LandingPage.css";
 
 export const CurrencyContext = createContext();
 export const LanguageContext = createContext();
+
+export const CartContext = createContext();
 export const CartCountContext = createContext();
 
 const LandingPage = () => {
@@ -16,7 +18,17 @@ const LandingPage = () => {
 
   const [language, setLanguage] = useState("EN");
   const [currency, setCurrency] = useState("₹");
+
+  const [cart, setCart] = useState([]);
   const [cartCount, setCartCount] = useState(0);
+
+  useEffect(() => {
+    let c = JSON.parse(localStorage.getItem("Cart"));
+    if (c) {
+      setCart(c);
+      setCartCount(c.length);
+    }
+  }, []);
 
   useEffect(() => {
     let c = localStorage.getItem("Currency");
@@ -33,15 +45,17 @@ const LandingPage = () => {
     <div>
       <LanguageContext.Provider value={[language, setLanguage]}>
         <CurrencyContext.Provider value={[currency, setCurrency]}>
-          <CartCountContext.Provider value={[cartCount, setCartCount]}>
-            <AppBar languages={languages} currencies={currencies} />
-            <Greeting />
-            <Routers />
-            <section className="app-footer">
-              <About />
-              <Footer />
-            </section>
-          </CartCountContext.Provider>
+          <CartContext.Provider value={[cart, setCart]}>
+            <CartCountContext.Provider value={[cartCount, setCartCount]}>
+              <AppBar languages={languages} currencies={currencies} />
+              <Greeting />
+              <Routers />
+              <section className="app-footer">
+                <About />
+                <Footer />
+              </section>
+            </CartCountContext.Provider>
+          </CartContext.Provider>
         </CurrencyContext.Provider>
       </LanguageContext.Provider>
     </div>
