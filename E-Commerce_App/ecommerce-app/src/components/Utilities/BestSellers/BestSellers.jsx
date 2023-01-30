@@ -9,7 +9,7 @@ import {
   CurrencyContext,
   LanguageContext,
 } from "../../Pages/LandingPage/LandingPage";
-// import AddToCart from "../AddToCart/AddToCart";
+import AddToCart from "../AddToCart/AddToCart";
 import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 
 const BestSellers = () => {
@@ -145,17 +145,17 @@ const BestSellers = () => {
                   </span>
                 </div>
               </div>
-              <button
+              {/* <button
                 id={`btn-cart-collect-${index}`}
                 className="btn-to-cart"
                 onClick={() => addToCart(index, product._id)}
               >
                 Add to cart
-              </button>
+              </button> */}
 
-              {/* <div id={`btn-cart-collect-${index}`} className="btn-to-cart">
-                {<AddToCart addToCart={addToCart} />}
-              </div> */}
+              <div id={`btn-cart-collect-${index}`} className="btn-to-cart">
+                {<AddToCart onClick={() => addToCart(index, product._id)} />}
+              </div>
             </div>
           );
         })}

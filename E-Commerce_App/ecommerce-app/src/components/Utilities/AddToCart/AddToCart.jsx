@@ -3,7 +3,7 @@ import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 import { CartCountContext } from "../../Pages/LandingPage/LandingPage";
 import "./AddToCart.css";
 
-const AddToCart = ({ addToCart }) => {
+const AddToCart = ({ onClick }) => {
   const [cartCount, setCartCount] = useContext(CartCountContext);
 
   const cart = useContext(CartContext);
@@ -37,7 +37,7 @@ const AddToCart = ({ addToCart }) => {
         onClick={(e) => {
           run();
           increaseCartCount();
-          addToCart(e);
+          onClick(e);
         }}
       >
         <span>Add to cart</span>
