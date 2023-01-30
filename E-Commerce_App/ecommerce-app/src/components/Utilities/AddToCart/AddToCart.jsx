@@ -1,16 +1,9 @@
 import React, { useContext } from "react";
-import { CartContext } from "./../../Pages/LandingPage/LandingPage";
 import { CartCountContext } from "../../Pages/LandingPage/LandingPage";
 import "./AddToCart.css";
 
 const AddToCart = ({ onClick }) => {
   const [cartCount, setCartCount] = useContext(CartCountContext);
-
-  const cart = useContext(CartContext);
-
-  // const addToCart = (e) => {
-  //   console.log(e.currentTarget);
-  // };
 
   const increaseCartCount = () => {
     setCartCount((prevValue) => prevValue + 1);
